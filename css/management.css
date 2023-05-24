@@ -11,15 +11,15 @@
     src: url(../font/Poppins-Thin.ttf);
     src: url(../font/);
 }
-:root{
+
+:root {
     --green: #13AB4E;
     --grey: #333333;
     --white: #FFFFFF;
     --black: #000000;
 }
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,11 +27,12 @@
     text-decoration: none;
     border: none;
 }
-.container{
-    width: 1440px;
-    padding: 0 20px;
+
+.container {
+    max-width: 1140px;
     margin: 0 auto;
 }
+
 /* <!--management   started --> */
 
 /* <!-- management  finished --> */
