@@ -29,10 +29,32 @@
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1210px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
 /* <!-- customer  started --> */
+
+
+/* Tablet @media started*/
+
+@media screen and (min-width: 481px) and (max-width: 1025px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+/* Tablet @media finished*/
+
+/* Mobile @media started */
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+/* Mobile @media finished */
 
 /* <!-- customer finished --> */
