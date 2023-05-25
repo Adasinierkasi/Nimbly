@@ -5,6 +5,7 @@
     --grey: #333333;
     --white: #FFFFFF;
     --black: #000000;
+    --inputcolor:#F7F8FA;
 }
 
 * {
@@ -13,21 +14,101 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    border: none;
+    /* border: none; */
 }
 
-.container {
-    max-width: 1220px;
-    padding: 0 25px;
-    margin: 0 auto;
-}
 
 /* <!-- emprower  started --> */
 
+/* <!-- emprower  finished --> */
 
 /* Large screen desktop @media started*/
 
-@media screen and (min-width: 769px) and (max-width: 1025px) {}
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+    .container {
+        max-width: 1220px;
+        padding: 100px 150px;
+        margin: 0 auto;
+    }
+    .emprower-wrap .container .emp-big-text{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 72px;
+        text-align: center;
+        color: var(--grey);
+        margin-bottom: 16px;
+    }
+    .emprower-wrap .container .emp-small-text{
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--grey);
+    }
+    .emprower-wrap .container form {
+        background-color: #ccc;
+      
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .emprower-wrap .container form label{
+        padding-top: 16px;
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    display: block;
+    margin: 16px 0 12px 0;
+    }
+    .emprower-wrap .container form input{
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color:var(--black);
+    padding: 20px 290px 20px 24px;
+    display: inline-block;
+    opacity: 0.3;
+    background-color:var(--inputcolor);
+    border-radius: 8px;
+    border: none;
+    display: block;
+    }
+    .emprower-wrap .container form select{
+        padding: 20px 343px 20px 24px;
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color:var(--grey);
+    display: block;
+    border-radius: 8px;
+    border: none;
+    }
+    .emprower-wrap .container form .emp-btn{
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    background-color: var(--green);
+    color:var(--white);
+    padding: 23px 196px;
+    border: none;
+    margin-top: 24px;
+    border-radius: 8px;
+    }
+}
 
 /* Large screen desktop @media finished*/
 
@@ -35,7 +116,9 @@
 
 /* Tablet @media started*/
 
-@media screen and (min-width: 481px) and (max-width: 768px) {}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+   
+}
 
 /* Tablet @media finished*/
 
