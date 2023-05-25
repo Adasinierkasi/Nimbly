@@ -26,7 +26,7 @@
     display: none;
 }
 
-/* <!-- home  started --> */
+/* <!-- home started --> */
 
 .d-flex {
     display: flex;
@@ -38,23 +38,23 @@
     font-family: 'Poppins';
 }
 
-/* Large screen desktop @media started*/
+/* Small screens and laptops (@media) started*/
 
 @media screen and (min-width: 769px) and (max-width: 1025px) {}
 
-/* Large screen desktop @media finished*/
+/* Small screens and laptops (@media) finished*/
 
 
 
-/* Tablet @media started*/
+/* Ipads and tablets (@media) started*/
 
 @media screen and (min-width: 481px) and (max-width: 768px) {}
 
-/* Tablet @media finished*/
+/* Ipads and tablets (@media) finished*/
 
 
 
-/* Mobile @media started */
+/* Mobile devices (@media) started */
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .container {
@@ -62,7 +62,11 @@
     }
 }
 
-/* Mobile @media finished */
+/* Mobile devices (@media) finished */
+
+
+
+/* Unsupported devices (@media) started */
 
 @media screen and (max-width: 319px) {
     .unsupported-device {
@@ -85,5 +89,7 @@
         transform: translateY(-50%);
     }
 }
+
+/* Unsupported devices (@media) finished */
 
 /* <!-- home  finished --> */
