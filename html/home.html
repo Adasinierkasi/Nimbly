@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/nimbly-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/home.css">
     <title>Home</title>
 </head>
@@ -18,7 +21,15 @@
 
     <!-- home pages started -->
     <section class="home-wrap">
-        <div class="navbar-mobile-block"></div>
+        <div class="navbar-mobile-block">
+            <i class="fa fa-times nav-close-btn"></i>
+            <ul class="d-flex">
+                <li><a href="#0">Features</a></li>
+                <li><a href="#0">How it works</a></li>
+                <li><a href="#0">Industries</a></li>
+                <li><a href="#0">Insight</a></li>
+            </ul>
+        </div>
         <div class="header-wrap">
             <div class="navbar">
                 <div class="container d-flex navbar-wrap">
@@ -49,7 +60,7 @@
             <div class="header">
                 <div class="container">
                     <div class="navbar-mobile d-flex">
-                        <img src="../img/nav-bars.svg" alt="bars-btn">
+                        <img src="../img/nav-bars.svg" alt="bars-btn" class="nav-open-btn">
                         <a href="#0"><img src="../img/nimbly-logo-mobile.svg" alt="logo"></a>
                         <a href="#0">
                             <img src="../img/signin-user-green.svg" alt="user-icon">
@@ -82,6 +93,8 @@
 
     </section>
     <!-- home pages finished -->
+
+    <script src="../script/home.js"></script>
 </body>
 
 </html>
