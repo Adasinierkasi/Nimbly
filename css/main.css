@@ -1,0 +1,93 @@
+/* Universal codes started*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --green: #13AB4E;
+  --grey: #333333;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+.unsupported-device {
+  display: none;
+}
+
+/* Universal codes finished*/
+
+
+
+
+
+/* @Media query */
+
+
+
+/* Small screens and laptops (@media) started*/
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {}
+
+/* Small screens and laptops (@media) finished*/
+
+
+
+/* Ipads and tablets (@media) started*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {}
+
+/* Ipads and tablets (@media) finished*/
+
+
+
+/* Mobile devices (@media) started */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+/* Mobile devices (@media) finished */
+
+
+
+/* Unsupported devices (@media) started */
+
+@media screen and (max-width: 319px) {
+  .unsupported-device {
+    display: block;
+    background-color: var(--black);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    font-family: 'Poppins';
+  }
+
+  .unsupported-device p {
+    color: var(--white);
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Unsupported devices (@media) finished */
