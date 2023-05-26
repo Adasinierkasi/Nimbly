@@ -273,7 +273,7 @@
     background: var(--white);
     padding-left: 64px;
     cursor: pointer;
-    padding-top: 30px;
+    margin-top: 50px;
     padding-bottom: 15px;
     flex-direction: column;
     border-radius: 8px;
