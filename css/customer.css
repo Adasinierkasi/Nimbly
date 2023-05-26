@@ -149,7 +149,33 @@
 }
 .texts-box{
   display: flex;
-  padding-top: 50px;
+  margin-top: 50px;
+  margin-bottom: 24px;
+}
+.texts h3{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 42px;
+  color: #333333;
+}
+.text{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 42px;
+color: #333333;
+
+}
+.texts p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #333333;
 }
 
 /* Caption text */
