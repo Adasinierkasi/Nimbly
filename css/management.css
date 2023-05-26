@@ -93,6 +93,7 @@
     font-size: 20px;
     line-height: 36px;
     margin-top: 100px;
+    text-align: center;
 }
 .management-wrap .forVideo h2{
     margin-top: 12px;
@@ -122,7 +123,76 @@
     width: 674px;
     height: 380px;
     margin: 48px;
-    border:  2px solid green;
+}
+@media screen and ( max-width: 375px){
+    .management-wrap{
+        border: 2px solid red;
+        position: relative;
+        height: auto;
+        max-width: 100%;
+        overflow: hidden;
+        gap: 0;
+        margin: 0;
+    }
+    .management-wrap ul{
+        margin: 0;
+        position: unset;
+        width: 309px;
+        height: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .management-wrap ul li{
+        top: 0%;
+        position:unset;
+        animation: none;
+        top: auto;
+        transform: none;
+        animation-name: none;
+        height: 41px;
+        width: 100px;
+    }
+    .management-wrap ul li img{
+        height: 41px;
+        width: 110px;
+    }
+    .forVideo{
+        margin: 0;
+        width: 343px;
+        height: 459px;
+    }
+    .management-wrap .forVideo h4{
+        width: 149px;
+        height: 18px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        margin: 0;
+    }
+
+    .management-wrap .forVideo h2{
+        width: 343px;
+        height: 108px;
+        width: 343px;
+        height: 108px;
+        font-size: 24px;
+        line-height: 36px;  
+    }
+    .management-wrap .forVideo h6{
+        width: 309px;
+        height: 96px;
+        margin: 8px auto;
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .management-wrap .forVideo video{
+        width: 343px;
+        height: 193px;
+        margin: 0;
+        border: 2px solid red;
+    }
 }
 
 /* <!-- management  finished --> */
