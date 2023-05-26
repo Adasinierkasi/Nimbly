@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@font-face {
+    font-family: "Poppins";
+    src: url(../font/Poppins-Black.ttf);
+    src: url(../font/Poppins-Bold.ttf);
+    src: url(../font/Poppins-ExtraBold.ttf);
+    src: url(../font/Poppins-ExtraLight.ttf);
+    src: url(../font/Poppins-Light.ttf);
+    src: url(../font/Poppins-Medium.ttf);
+    src: url(../font/Poppins-Regular.ttf);
+    src: url(../font/Poppins-SemiBold.ttf);
+    src: url(../font/Poppins-Thin.ttf);
+    src: url(../font/);
+}
 
 :root {
     --green: #13AB4E;
@@ -17,38 +29,10 @@
 }
 
 .container {
-    max-width: 1220px;
-    padding: 0 25px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
 /* <!-- industries  started --> */
-
-
-/* Small screens and laptops (@media) started*/
-
-@media screen and (min-width: 769px) and (max-width: 1025px) {}
-
-/* Small screens and laptops (@media) finished*/
-
-
-
-/* Ipads and tablets (@media) started*/
-
-@media screen and (min-width: 481px) and (max-width: 768px) {}
-
-/* Ipads and tablets (@media) finished*/
-
-
-
-/* Mobile devices (@media) started started */
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
-}
-
-/* Mobile devices (@media) started finished */
 
 /* <!-- industries  finished --> */

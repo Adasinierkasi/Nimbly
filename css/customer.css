@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@font-face {
+    font-family: "Poppins";
+    src: url(../font/Poppins-Black.ttf);
+    src: url(../font/Poppins-Bold.ttf);
+    src: url(../font/Poppins-ExtraBold.ttf);
+    src: url(../font/Poppins-ExtraLight.ttf);
+    src: url(../font/Poppins-Light.ttf);
+    src: url(../font/Poppins-Medium.ttf);
+    src: url(../font/Poppins-Regular.ttf);
+    src: url(../font/Poppins-SemiBold.ttf);
+    src: url(../font/Poppins-Thin.ttf);
+    src: url(../font/);
+}
 
 :root {
     --green: #13AB4E;
@@ -17,12 +29,12 @@
 }
 
 .container {
-    max-width: 1220px;
-    padding: 0 25px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
 /* <!-- customer  started --> */
+<<<<<<< HEAD
 @keyframes tonext {
     75% {
       left: 0;
@@ -258,4 +270,7 @@ color: #333333;
 
 /* <!-- customer finished --> */
 
+=======
+>>>>>>> 5696af195c68a88cde14f8d21fa9083d9e34e1c6
 
+/* <!-- customer finished --> */

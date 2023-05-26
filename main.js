@@ -24,3 +24,18 @@ let slideIndex = 1;
         slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " active";
       }
+
+// features started
+      const appPhone = document.querySelectorAll(".app_phone")
+      let counter = 0; 
+      appPhone.forEach(i => {
+          counter++
+          i.addEventListener('click', () => {
+              appPhone.forEach(item => {
+                  item.classList.remove('active')
+                  i.classList.add('active')
+              })
+          })
+          
+      })
+// features finished
