@@ -143,7 +143,7 @@ html {
   margin: 0 auto;
   max-width: 837px;
 }
-.featuries-acardion{
+.featuries-accordion{
   display: none;
 }
 
@@ -152,6 +152,7 @@ html {
 /* Small screens and laptops (@media) started*/
 
 @media screen and (min-width: 769px) and (max-width: 1025px) {
+
   .container{
     padding: 0 20px;
   }
@@ -160,7 +161,7 @@ html {
   }
   .features-wrap-title h1 {
     font-size: 40px;
-    line-height: 72px;
+    line-height: 68px;
     width: 75%;
   }
   .tab {
@@ -190,12 +191,24 @@ html {
 /* Ipads and tablets (@media) started*/
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .container{
+    padding: 0 17px;
+  }
   .featuries-tap-bar{
     display: none;
   }
+  .featuries-accordion{
+    display: block;
+  }
+  .features-wrap-title p{
+  font-size: 18px;
+  }
+  .features-wrap-title h1{
+  font-size: 36px;
+  line-height: 52px;
+  }
   .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color:#F3FBF6;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -204,21 +217,41 @@ html {
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1.5px solid #DEDEDE;
+    transition: all 0.7s ease;
+    position: relative;
   }
-  
-  .active, .accordion:hover {
-    background-color: #ccc; 
+  .accordion i{
+    position: absolute;
+    right: 10px;
   }
-  
+  .active, .accordion:hover{
+    color: var(--green);
+  }
+  .accordion:hover i{
+    transform: rotate(180deg);
+  }
   .panel {
-    padding: 0 18px;
+    padding: 20px 18px;
     display: none;
-    background-color: white;
+    background-color: #F3FBF6;
     overflow: hidden;
   }
-  .featuries-acardion{
-    display: block;
+  .panel p{
+    font-size: 17px;
   }
+  .panel p a{
+    color: var(--green);
+  }
+  .panel img{
+    max-width: 90%;
+    margin-top: 40px;
+
+  }
+  
 }
 
 /* Ipads and tablets (@media) finished*/
