@@ -62,7 +62,7 @@
     }
   }
   
-  
+
   @keyframes snap {
     96% {
       scroll-snap-align: center;
@@ -108,7 +108,7 @@
     font-size: 48px;
     line-height: 72px;
     text-align: center;
-    color: #333333;
+    color: var(--grey);
   }
   .customer-texts h3 {
     font-family: 'Poppins';
@@ -117,19 +117,11 @@
     font-size: 18px;
     line-height: 32px;
     text-align: center;
-    color:#333;
+    color:var(--grey);
     width: 586px;
     margin: 0 auto;
     margin-bottom: 96px;
   }
-
-
-
-
-
-
-
-
   .wrapper {
     max-width: 600px;
     width: 100%;
@@ -245,6 +237,7 @@
     scroll-snap-type: x mandatory;
     gap: 16px;
     border-radius: 8px;
+    height: 500px;
     scroll-behavior: smooth;
     scrollbar-width: none;
   }
@@ -292,7 +285,7 @@
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #fff;
+    border: 4px solid --white
   }
   .carousel .card h2 {
     font-weight: 500;
@@ -431,12 +424,18 @@
   }
   .carousel .card span{
     font-size: 20px;
+    max-width: 768px;
     line-height: 30px;
   }
   .carousel .card{
+    padding-left: 30px;
     max-width: 768px;
     margin: 0 auto;
 
+  }
+  .wrapper {
+    width: 768px;
+    margin: 0 auto;
   }
   .card .div{
     align-items: center;
@@ -464,7 +463,7 @@
 
 
 
-/* Mobile devices (@media) started started */
+/* Mobile devices (@media) started */
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .container {
@@ -478,6 +477,10 @@
     }
     .customer-img-box img{
       display: none;
+    }
+    .carousel .card{
+      max-width: 480px;
+      padding-left: 0;
     }
     .carousel .card  span{
       font-size: 20px;
@@ -513,6 +516,6 @@
     }
 }
 
-/* Mobile devices (@media) started finished */
+/* Mobile devices (@media) finished */
 
 /* <!-- customer finished --> */
