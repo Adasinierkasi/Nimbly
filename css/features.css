@@ -34,7 +34,7 @@ html {
 }
 
 /* Universal codes finished */
-.features-wrap{
+.features-wrap {
   background-image: url(../img/featries-bg-color.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,13 +57,13 @@ html {
   line-height: 72px;
   text-align: center;
   color: #333333;
-  width: 80%;
+  max-width: 80%;
   margin: 0 auto;
 }
 .tab {
-  width: 1035px;
+  max-width: 1035px;
   height: 66px;
-  background: #DCF3E5;
+  background: #dcf3e5;
   /* opacity: 0.1; */
   border-radius: 75px;
   display: flex;
@@ -80,28 +80,26 @@ html {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 16.5px 16px;
+  padding: 10px 0;
   transition: 0.3s;
   border-radius: 75px;
-  font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 75px;
 }
-.tab button:active{
+.tab button:active {
   background: rgba(0, 0, 0, 0.141);
 }
 .tab button img {
-  width: 32px;
+  max-width: 32px;
   color: var(--black);
 }
-.tab button:hover img{
-  color: #13AB4E;
-} 
+.tab button:hover img {
+  color: #13ab4e;
+}
 .tab button p {
   font-family: "Poppins";
   font-style: normal;
@@ -111,8 +109,8 @@ html {
   text-align: center;
   color: #333333;
 }
-.tab button:hover p{
-  color: #13AB4E;
+.tab button:hover p {
+  color: #13ab4e;
 }
 .tablinks {
   display: flex;
@@ -126,30 +124,62 @@ html {
   border-top: none;
   text-align: center;
 }
-.tabcontent p{
+.tabcontent p {
   width: 74%;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 24px;
   margin: 30px auto;
-  text-align: center; 
+  text-align: center;
   color: #333333;
 }
-.tabcontent p a{
+.tabcontent p a {
   color: #13ab4e;
 }
-.tabcontent img{
+.tabcontent img {
   margin: 0 auto;
+  max-width: 837px;
 }
- 
+
 /* <!-- features  started --> */
 
 /* Small screens and laptops (@media) started*/
 
 @media screen and (min-width: 769px) and (max-width: 1025px) {
+  .container{
+    padding: 0 20px;
+  }
+  .features-wrap-title p {
+    font-size: 18px;
+  }
+  .features-wrap-title h1 {
+    font-size: 40px;
+    line-height: 72px;
+    width: 75%;
+  }
+  .tab {
+    max-width: 910px;
+    height: 55px;
+  }
+  .tab button {
+    padding: 7px 3px;
+    border-radius: 70px;
+  }
+  .tab button img {
+    max-width: 28px;
+  }
+  .tab button p {
+    font-size: 11px;
+  }
+  .tabcontent p {
+  font-size: 16px;
+  }
+  .tabcontent img{
+    max-width: 500px;
+  }
 }
 
 /* Small screens and laptops (@media) finished*/
