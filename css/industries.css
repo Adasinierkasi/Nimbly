@@ -1,16 +1,6 @@
-@font-face {
-    font-family: "Poppins";
-    src: url(../font/Poppins-Black.ttf);
-    src: url(../font/Poppins-Bold.ttf);
-    src: url(../font/Poppins-ExtraBold.ttf);
-    src: url(../font/Poppins-ExtraLight.ttf);
-    src: url(../font/Poppins-Light.ttf);
-    src: url(../font/Poppins-Medium.ttf);
-    src: url(../font/Poppins-Regular.ttf);
-    src: url(../font/Poppins-SemiBold.ttf);
-    src: url(../font/Poppins-Thin.ttf);
-    src: url(../font/);
-}
+/* Universal codes started */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
     --green: #13AB4E;
@@ -26,13 +16,132 @@
     list-style: none;
     text-decoration: none;
     border: none;
+    font-family: 'Poppins';
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1220px;
+    padding: 0 25px;
     margin: 0 auto;
+    border: 1px solid red;
 }
 
-/* <!-- industries  started --> */
+img {
+    max-width: 100%;
+    height: auto;
+}
 
+.unsupported-device {
+    display: none;
+}
+
+/* Universal codes finished */
+
+/* <!-- industries  started --> */
+    .industries_box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .industries_leftbox {
+        width: 50%;
+    }
+    .industries_rightbox {
+        width: 50%;
+        padding: 10px;
+    }
+    .rightbox_title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 36px;
+        color: var(--green);
+    }
+    #main_title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 72px;
+        color: var(--grey);
+    }
+    .rightbox_text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: var(--grey);
+    }
+    .rightbox_small {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 1px solid var(--black);
+        margin-bottom: 10px;
+        padding: 15px 0;
+    }
+    .rightbox_small div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+    .smallbox_title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        color: var(--grey);
+    }
+    .rightbox_bottom_flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+    }
+    .rightbox_bottom_flex span {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: var(--green);
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    @media (max-width: 800px) {
+        #main_title {
+            font-size: 32px;
+            line-height: 45px;
+        }
+    }
+    @media (max-width: 580px) {
+        .industries_box {
+            flex-direction: column-reverse;
+        }
+        #main_title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .rightbox_title {
+            font-size: 12px;
+        }
+        .rightbox_text {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .smallbox_title {
+            font-size: 16px;
+        }
+    }
 /* <!-- industries  finished --> */

@@ -1,16 +1,6 @@
-@font-face {
-    font-family: "Poppins";
-    src: url(../font/Poppins-Black.ttf);
-    src: url(../font/Poppins-Bold.ttf);
-    src: url(../font/Poppins-ExtraBold.ttf);
-    src: url(../font/Poppins-ExtraLight.ttf);
-    src: url(../font/Poppins-Light.ttf);
-    src: url(../font/Poppins-Medium.ttf);
-    src: url(../font/Poppins-Regular.ttf);
-    src: url(../font/Poppins-SemiBold.ttf);
-    src: url(../font/Poppins-Thin.ttf);
-    src: url(../font/);
-}
+/* Universal codes started */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
     --green: #13AB4E;
@@ -26,25 +16,42 @@
     list-style: none;
     text-decoration: none;
     border: none;
+    font-family: 'Poppins';
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1220px;
+    padding: 0 25px;
     margin: 0 auto;
 }
-.title{
+
+.unsupported-device {
+    display: none;
+}
+
+/* Universal codes finished */
+
+
+.title {
     text-align: center;
 }
-.features .container{
+
+.features .container {
     width: calc(1440px - 2 * 220px);
 }
-.features h1{
+
+.features h1 {
     text-align: center;
     font-size: 48px;
     font-family: sans-serif;
 }
 
-.features .navbar{
+.features .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,59 +60,61 @@
     background-color: #0aaa4725;
 }
 
-.features .navbar li{
-    padding: 15px 20px ;
+.features .navbar li {
+    padding: 15px 20px;
     border-radius: 30px;
     transition: all .5s ease;
     cursor: pointer;
 }
 
-.features .navbar li:hover{
+.features .navbar li:hover {
     background: #fff;
 }
 
-.features .navbar li:hover a{
+.features .navbar li:hover a {
     color: #0AAA48;
 }
-.features .navbar li a{
+
+.features .navbar li a {
     text-decoration: none;
     color: #000;
 }
 
-.features .container .text{
+.features .container .text {
     text-align: center;
     font-size: 18px;
     padding: 0 30px;
 }
 
-.features .container .add{
+.features .container .add {
     display: none;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.green-text{
+.green-text {
     color: #0AAA48;
 }
-.window{
+
+.window {
     overflow: hidden;
     padding: 30px 0;
     gap: 30px;
     justify-content: space-between;
-    transition: all .5s linear
-    ;
+    transition: all .5s linear;
     /* flex-wrap: wrap; */
 }
-.features .container .box{
+
+.features .container .box {
     /* position: relative; */
     width: 50%;
 }
 
-.features .container .box .row{
+.features .container .box .row {
     width: 450px;
     border: 1px solid;
     border-radius: 10px;
@@ -113,71 +122,73 @@
     filter: brightness(50%);
 }
 
-.features .container .row.active{
+.features .container .row.active {
     scale: 1.1;
     filter: brightness(100%);
     box-shadow: 0 0 15px #00000065;
 }
 
-.scroll{
+.scroll {
     position: relative;
     left: -300px;
 }
 
-.features .container .row .row-title{
+.features .container .row .row-title {
     background: #0AAA48;
-    padding: 10px ;
+    padding: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.features .container .row .row-title .circles{
+.features .container .row .row-title .circles {
     width: 10%;
     justify-content: start;
     gap: 1px;
 }
-.features .container .row .row-title .circle{
+
+.features .container .row .row-title .circle {
     width: 5px;
     height: 5px;
     border-radius: 100%;
     background: #000;
 }
 
-.features .container .row .row-title .page-name{
+.features .container .row .row-title .page-name {
     text-align: center;
     padding: 15px 0;
 }
 
-.features .container .row .row-filter{
+.features .container .row .row-filter {
     width: 90%;
     padding: 15px 0;
     margin: 0 auto;
     border-bottom: 1px solid #ccc;
 }
 
-.features .container .row .row-filter .btn{
+.features .container .row .row-filter .btn {
     padding: 7.5px 0;
     width: 40%;
 }
 
-.features .container .row .row-field{
+.features .container .row .row-field {
     width: 90%;
     margin: 0 auto;
     list-style: none;
 }
 
 
-.features .container .row .row-field .row-field-title{
+.features .container .row .row-field .row-field-title {
     padding: 10px 0;
 }
 
-.features .container .row .row-field .field  .issue-field{
+.features .container .row .row-field .field .issue-field {
     /* align-items: start; */
     height: 100%;
     display: flex;
     justify-content: space-between;
 }
-.features .container .row .row-field li{
+
+.features .container .row .row-field li {
     list-style: none;
     position: relative;
     padding: 5px 20px;
@@ -186,12 +197,13 @@
     transition: all .5s ease;
 }
 
-.features .container .row .row-field li:hover{
+.features .container .row .row-field li:hover {
     scale: 1.3;
     background: #ccc;
     z-index: 1;
 }
-.features .container .row .row-field li::before{
+
+.features .container .row .row-field li::before {
     position: absolute;
     top: 5%;
     left: 0;
@@ -201,58 +213,84 @@
     background: crimson;
 }
 
-.features .container .row .row-field li:hover::before{
+.features .container .row .row-field li:hover::before {
     background: #4a95f7;
 }
-.features .container .row .row-field .field .issue-info{
+
+.features .container .row .row-field .field .issue-info {
     width: 70%;
 }
 
-.features .container .row .row-field .field .issue-info h1{
+.features .container .row .row-field .field .issue-info h1 {
     font-size: 16px;
     text-align: start;
 }
 
-.features .container .row .row-field .field .issue-btn{
+.features .container .row .row-field .field .issue-btn {
     display: none;
     width: 30%;
     height: 100%;
     justify-content: end;
     border: 1px solid;
 }
-.features .container .row .row-field .field p{
+
+.features .container .row .row-field .field p {
     font-size: 12px;
     font-family: sans-serif;
 }
 
-.features .container .row .row-field .field .issue-btn .btn-danger{
+.features .container .row .row-field .field .issue-btn .btn-danger {
     padding: 7.5px 20px;
 }
 
-.features .container .row .row-field .field .issue-info .text{
+.features .container .row .row-field .field .issue-info .text {
     text-align: start;
     padding: 0;
 }
 
-.features .author{
+.features .author {
     text-align: end;
 }
 
-.features span{
+.features span {
     font-weight: 600;
 }
 
-.features .row-footer{
+.features .row-footer {
     width: 100%;
     border-top: 1px solid #ccc;
     padding: 15px 0;
 }
 
-.features .row-footer-field{
+.features .row-footer-field {
     width: 90%;
     list-style: none;
-    justify-content:space-around;
+    justify-content: space-around;
 }
+
 /* <!-- features  started --> */
+
+
+/* Small screens and laptops (@media) started*/
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {}
+
+/* Small screens and laptops (@media) finished*/
+
+
+
+/* Ipads and tablets (@media) started*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {}
+
+/* Ipads and tablets (@media) finished*/
+
+
+
+/* Mobile devices (@media) started */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {}
+
+/* Mobile devices (@media) finished */
 
 /* <!-- features finished --> */
