@@ -251,104 +251,128 @@ li {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
+  width: 400px;
   font-size: 18px;
   line-height: 27px;
   color: var(--grey);
+  margin-bottom: 30px;
 
-}
+  .wrapper i:last-child {
+    right: 332px;
+    top: 420px;
+  }
 
-.card .div {
-  gap: 22px;
-  width: 400px;
-  margin-top: 24px;
-  margin-right: 220px;
-  align-items: center;
-  display: flex;
-}
+  .card .div h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 42px;
+    color: var(--grey);
+  }
 
-.wrapper .carousel {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 1) - 12px);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 16px;
-  border-radius: 8px;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
+  .card .div p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--grey);
 
-.carousel::-webkit-scrollbar {
-  display: none;
-}
+  }
 
-.carousel.no-transition {
-  scroll-behavior: auto;
-}
+  .card .div {
+    gap: 22px;
+    width: 400px;
+    margin-top: 24px;
+    margin-right: 220px;
+    align-items: center;
+    display: flex;
+  }
 
-.carousel.dragging {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
-}
+  .wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 1) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
 
-.carousel.dragging .card {
-  cursor: grab;
-  user-select: none;
-}
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
 
-.carousel :where(.card, .img) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
 
-.carousel .card {
-  scroll-snap-align: start;
-  height: 372px;
-  width: 670px;
-  list-style: none;
-  background: var(--white);
-  padding-left: 64px;
-  cursor: pointer;
-  margin-top: 50px;
-  padding-bottom: 15px;
-  flex-direction: column;
-  border-radius: 8px;
-}
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
 
-.carousel .card .img {
-  background: #8B53FF;
-  height: 148px;
-  width: 148px;
-  border-radius: 50%;
-}
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
 
-.card .img img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #fff;
-}
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.carousel .card h2 {
-  font-weight: 500;
-  font-size: 1.56rem;
-  margin: 30px 0 5px;
-}
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 372px;
+    width: 670px;
+    list-style: none;
+    background: var(--white);
+    padding-left: 64px;
+    cursor: pointer;
+    margin-top: 50px;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+  }
 
-.carousel .card span {
-  color: #6A6D78;
-  font-size: 1.31rem;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 42px;
-  color: var(--grey);
-}
+  .carousel .card .img {
+    background: #8B53FF;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+  }
 
-/* @media screen and (max-width: 900px) {
+  .card .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+  }
+
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+  }
+
+  .carousel .card span {
+    color: #6A6D78;
+    font-size: 1.31rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 42px;
+    color: var(--grey);
+  }
+
+  /* @media screen and (max-width: 900px) {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
@@ -445,20 +469,20 @@ li {
   }
 } */
 
-/* @media screen and (max-width: 900px) {
+  /* @media screen and (max-width: 900px) {
     .wrapper .carousel {
       grid-auto-columns: calc((100% / 2) - 9px);
     }
   } */
 
-/* @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     .wrapper .carousel {
       grid-auto-columns: 100%;
     }
   } */
 
 
-/* @media only screen and (max-width: 375px) {
+  /* @media only screen and (max-width: 375px) {
 
   .prev,
   .next,
@@ -513,8 +537,10 @@ li {
   .wrapper i:after {
     display: none;
   }
-
-  .card div {
+  .wrapper i:first-child:after:active{
+      opacity: 1;
+  }
+  .card div{
     margin: 0 auto;
     width: 365px;
   }
@@ -527,6 +553,7 @@ li {
     left: 32px;
   }
 } */
+}
 
 /* Small screens and laptops (@media) started*/
 
