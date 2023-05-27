@@ -124,8 +124,21 @@ img {
             font-size: 32px;
             line-height: 45px;
         }
+        .smallbox_title {
+            font-size: 20px;
+        }
     }
     @media (max-width: 580px) {
+        .container {
+            width: 100%;
+        }
+        .industries_leftbox {
+            width: 100%;
+        }
+        .industries_rightbox {
+            width: 100%;
+            padding: 0;
+        }
         .industries_box {
             flex-direction: column-reverse;
         }
