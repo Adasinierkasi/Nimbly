@@ -221,7 +221,6 @@ html {
     align-items: center;
     gap: 10px;
     border-bottom: 1.5px solid #DEDEDE;
-    transition: all 0.7s ease;
     position: relative;
   }
   .accordion i{
@@ -259,6 +258,67 @@ html {
 /* Mobile devices (@media) started */
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .container{
+    padding: 0 15px;
+  }
+  .featuries-tap-bar{
+    display: none;
+  }
+  .featuries-accordion{
+    display: block;
+  }
+  .features-wrap-title p{
+  font-size: 15px;
+  }
+  .features-wrap-title h1{
+  font-size: 24px;
+  line-height: 46px;
+  }
+  .accordion {
+    background-color:#F3FBF6;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1.5px solid #DEDEDE;
+    position: relative;
+  }
+  .accordion img{
+    width: 30px;
+  }
+  .accordion i{
+    position: absolute;
+    right: 10px;
+  }
+  .active, .accordion:hover{
+    color: var(--green);
+  }
+  .accordion:hover i{
+    transform: rotate(180deg);
+  }
+  .panel {
+    padding: 18px 16px;
+    display: none;
+    background-color: #F3FBF6;
+    overflow: hidden;
+  }
+  .panel p{
+    font-size: 15px;
+  }
+  .panel p a{
+    color: var(--green);
+  }
+  .panel img{
+    max-width: 90%;
+    margin-top: 30px;
+  }
 }
 
 /* Mobile devices (@media) finished */
