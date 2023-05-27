@@ -309,71 +309,8 @@
     line-height: 42px;
     color: var(--grey);
   }
-  @media screen and (max-width: 900px) {
-    .wrapper .carousel {
-      grid-auto-columns: calc((100% / 2) - 9px);
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .wrapper .carousel {
-      grid-auto-columns: 100%;
-    }
-  }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 375px) {
-  .prev, .next,.text {
-    font-size: 11px
-  }
-  .customer-img-box img{
-    display: none ;
-  }
-  .carousel .card {
-    width: 365px;
-  }
-  .carousel .card span{
-    font-size: 18px;
-    line-height: 25px;
-  }
-  .card .div h3{
-    font-size: 20px;
-  }
-  .card .div p{
-    font-size: 15px;
-  }
-  .carousel .card {
-    padding-left: 5px;
-  }
-  .customer-texts h2{
-    width: 365px;
-    font-size: 30px;
-    line-height: 30px;
-  }
-  .text-box{
-    width: 365px;
-  }
-  .customer-texts h3{
-    width: 365px;
-    line-height: 20px;
-  }
-  .wrapper i:before{
-    display: none;
-  }
-  .wrapper i:after{
-    display: none;
-  }
-  .wrapper i:first-child:after:active{
-      opacity: 1;
-  }
-  .card div{
-    margin: 0 auto;
-    width: 365px;
-  }
- .wrapper i:last-child{
-  right: 32px;
- }
- .wrapper i:first-child{
-  left: 32px;
- }
 }
 
 /* Small screens and laptops (@media) started*/
