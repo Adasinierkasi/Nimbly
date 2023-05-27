@@ -1,16 +1,6 @@
-@font-face {
-    font-family: "Poppins";
-    src: url(../font/Poppins-Black.ttf);
-    src: url(../font/Poppins-Bold.ttf);
-    src: url(../font/Poppins-ExtraBold.ttf);
-    src: url(../font/Poppins-ExtraLight.ttf);
-    src: url(../font/Poppins-Light.ttf);
-    src: url(../font/Poppins-Medium.ttf);
-    src: url(../font/Poppins-Regular.ttf);
-    src: url(../font/Poppins-SemiBold.ttf);
-    src: url(../font/Poppins-Thin.ttf);
-    src: url(../font/);
-}
+/* Universal codes started */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
     --green: #13AB4E;
@@ -26,10 +16,17 @@
     list-style: none;
     text-decoration: none;
     border: none;
+    font-family: 'Poppins';
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1220px;
+    padding: 0 25px;
     margin: 0 auto;
     border: 1px solid red;
 }
@@ -38,6 +35,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.unsupported-device {
+    display: none;
+}
+
+/* Universal codes finished */
 
 /* <!-- industries  started --> */
     .industries_box {
