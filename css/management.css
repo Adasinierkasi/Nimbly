@@ -1,16 +1,6 @@
-@font-face {
-    font-family: "Poppins";
-    src: url(../font/Poppins-Black.ttf);
-    src: url(../font/Poppins-Bold.ttf);
-    src: url(../font/Poppins-ExtraBold.ttf);
-    src: url(../font/Poppins-ExtraLight.ttf);
-    src: url(../font/Poppins-Light.ttf);
-    src: url(../font/Poppins-Medium.ttf);
-    src: url(../font/Poppins-Regular.ttf);
-    src: url(../font/Poppins-SemiBold.ttf);
-    src: url(../font/Poppins-Thin.ttf);
-    src: url(../font/);
-}
+/* Universal codes started */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
     --green: #13AB4E;
@@ -26,10 +16,28 @@
     list-style: none;
     text-decoration: none;
     border: none;
+    font-family: 'Poppins';
+    -webkit-tap-highlight-color: transparent;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1220px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+.unsupported-device {
+    display: none;
+}
+
+/* Universal codes finished */
+
 /* <!--management   started --> */
-.management-wrap{
+.management-wrap {
     max-width: 1140px;
     margin: 0 auto;
     margin: 34px auto;
@@ -39,11 +47,12 @@
     flex-direction: column;
     gap: 100px;
 }
-.management-wrap ul{
+
+.management-wrap ul {
     position: relative;
     height: 70px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     width: 100%;
     overflow: hidden;
@@ -60,32 +69,37 @@
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-delay: calc( var(--i) * -1s);
+    animation-delay: calc(var(--i) * -1s);
 }
 
 @keyframes anime {
-    0%{
+    0% {
         left: -10%;
     }
-    100%{
+
+    100% {
         left: 110%;
     }
 }
-.management-wrap ul li img{
+
+.management-wrap ul li img {
     height: 70px;
 }
-.management-wrap .forVideo{
+
+.management-wrap .forVideo {
     margin-top: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.management-wrap .forVideo{
+
+.management-wrap .forVideo {
     width: 818px;
     height: 144px;
 }
-.management-wrap .forVideo h4{
+
+.management-wrap .forVideo h4 {
     color: var(--green);
     font-family: 'Poppins';
     font-style: normal;
@@ -95,7 +109,8 @@
     margin-top: 100px;
     text-align: center;
 }
-.management-wrap .forVideo h2{
+
+.management-wrap .forVideo h2 {
     margin-top: 12px;
     width: 818px;
     height: 144px;
@@ -105,9 +120,10 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 72px;
-    text-align: center;    
+    text-align: center;
 }
-.management-wrap .forVideo h6{
+
+.management-wrap .forVideo h6 {
     margin: 16px;
     width: 709px;
     height: 64px;
@@ -119,13 +135,15 @@
     line-height: 32px;
     text-align: center;
 }
-.management-wrap .forVideo video{
+
+.management-wrap .forVideo video {
     width: 674px;
     height: 380px;
     margin: 48px;
 }
-@media screen and ( max-width: 375px){
-    .management-wrap{
+
+@media screen and (max-width: 375px) {
+    .management-wrap {
         border: 2px solid red;
         position: relative;
         height: auto;
@@ -134,19 +152,21 @@
         gap: 0;
         margin: 0;
     }
-    .management-wrap ul{
+
+    .management-wrap ul {
         margin: 0;
         position: unset;
         width: 309px;
         height: 150px;
         display: flex;
         flex-wrap: wrap;
-        justify-content:space-between;
+        justify-content: space-between;
         align-items: center;
     }
-    .management-wrap ul li{
+
+    .management-wrap ul li {
         top: 0%;
-        position:unset;
+        position: unset;
         animation: none;
         top: auto;
         transform: none;
@@ -154,16 +174,19 @@
         height: 41px;
         width: 100px;
     }
-    .management-wrap ul li img{
+
+    .management-wrap ul li img {
         height: 41px;
         width: 110px;
     }
-    .forVideo{
+
+    .forVideo {
         margin: 0;
         width: 343px;
         height: 459px;
     }
-    .management-wrap .forVideo h4{
+
+    .management-wrap .forVideo h4 {
         width: 149px;
         height: 18px;
         font-weight: 600;
@@ -172,27 +195,52 @@
         margin: 0;
     }
 
-    .management-wrap .forVideo h2{
+    .management-wrap .forVideo h2 {
         width: 343px;
         height: 108px;
         width: 343px;
         height: 108px;
         font-size: 24px;
-        line-height: 36px;  
+        line-height: 36px;
     }
-    .management-wrap .forVideo h6{
+
+    .management-wrap .forVideo h6 {
         width: 309px;
         height: 96px;
         margin: 8px auto;
         font-size: 12px;
         line-height: 24px;
     }
-    .management-wrap .forVideo video{
+
+    .management-wrap .forVideo video {
         width: 343px;
         height: 193px;
         margin: 0;
         border: 2px solid red;
     }
 }
+
+
+/* Small screens and laptops (@media) started*/
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {}
+
+/* Small screens and laptops (@media) finished*/
+
+
+
+/* Ipads and tablets (@media) started*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {}
+
+/* Ipads and tablets (@media) finished*/
+
+
+
+/* Mobile devices (@media) started */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {}
+
+/* Mobile devices (@media) finished */
 
 /* <!-- management  finished --> */
