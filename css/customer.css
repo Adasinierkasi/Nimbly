@@ -222,9 +222,11 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
+    width: 400px;
     font-size: 18px;
     line-height: 27px;
     color: var(--grey);
+    margin-bottom: 30px;
 
   }
   .card .div {
@@ -358,6 +360,9 @@
   }
   .wrapper i:after{
     display: none;
+  }
+  .wrapper i:first-child:after:active{
+      opacity: 1;
   }
   .card div{
     margin: 0 auto;
