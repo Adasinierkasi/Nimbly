@@ -28,6 +28,12 @@ html {
     max-width: 1220px;
     padding: 0 25px;
     margin: 0 auto;
+    border: 1px solid red;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .unsupported-device {
@@ -37,27 +43,105 @@ html {
 /* Universal codes finished */
 
 /* <!-- industries  started --> */
+    .industries_box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .industries_leftbox {
+        width: 50%;
+    }
+    .industries_rightbox {
+        width: 50%;
+        padding: 10px;
+    }
+    .rightbox_title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 36px;
+        color: var(--green);
+    }
+    #main_title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 72px;
+        color: var(--grey);
+    }
+    .rightbox_text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: var(--grey);
+    }
+    .rightbox_small {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 1px solid var(--black);
+        margin-bottom: 10px;
+        padding: 15px 0;
+    }
+    .rightbox_small div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+    .smallbox_title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        color: var(--grey);
+    }
+    .rightbox_bottom_flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+    }
+    .rightbox_bottom_flex span {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: var(--green);
+        display: inline-block;
+        cursor: pointer;
+    }
 
-/* Small screens and laptops (@media) started*/
-
-@media screen and (min-width: 769px) and (max-width: 1025px) {}
-
-/* Small screens and laptops (@media) finished*/
-
-
-
-/* Ipads and tablets (@media) started*/
-
-@media screen and (min-width: 481px) and (max-width: 768px) {}
-
-/* Ipads and tablets (@media) finished*/
-
-
-
-/* Mobile devices (@media) started */
-
-@media screen and (min-width: 320px) and (max-width: 480px) {}
-
-/* Mobile devices (@media) finished */
-
+    @media (max-width: 800px) {
+        #main_title {
+            font-size: 32px;
+            line-height: 45px;
+        }
+    }
+    @media (max-width: 580px) {
+        .industries_box {
+            flex-direction: column-reverse;
+        }
+        #main_title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .rightbox_title {
+            font-size: 12px;
+        }
+        .rightbox_text {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .smallbox_title {
+            font-size: 16px;
+        }
+    }
 /* <!-- industries  finished --> */
