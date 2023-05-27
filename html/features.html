@@ -13,7 +13,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
   </head>
 
   <body>
@@ -26,47 +25,108 @@
         <div class="featuries-tap-bar">
           <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'London')">
-              <img src="../img/featries-real-time.svg" alt="">
+              <img src="../img/featries-real-time.svg" alt="" />
               <p>Real-time Audits</p>
             </button>
             <button class="tablinks" onclick="openCity(event, 'Paris')">
-              <img src="../img/featries-easy-digital.svg" alt="">
+              <img src="../img/featries-easy-digital.svg" alt="" />
               <p>Easy Digital Audits</p>
             </button>
             <button class="tablinks" onclick="openCity(event, 'Tokyo')">
-              <img src="../img/featries-chats.svg" alt="">
+              <img src="../img/featries-chats.svg" alt="" />
               <p>Issue Tracker</p>
             </button>
             <button class="tablinks" onclick="openCity(event, 'Paris')">
-              <img src="../img/featries-robust.svg" alt="">
+              <img src="../img/featries-robust.svg" alt="" />
               <p>Robust Validation</p>
             </button>
             <button class="tablinks" onclick="openCity(event, 'London')">
-              <img src="../img/featries-report.svg" alt="">
+              <img src="../img/featries-report.svg" alt="" />
               <p>Report & Analytics</p>
             </button>
           </div>
 
           <div id="London" class="tabcontent">
-            <p>You can optimize inspections with visual promoting guides to ensure products and services are being delivered consistently across the company. <a href="#0">Learn more.</a></p>
-            <img src="../img/featries-tap-bar-img.png" alt="">
+            <p>
+              You can optimize inspections with visual promoting guides to
+              ensure products and services are being delivered consistently
+              across the company. <a href="#0">Learn more.</a>
+            </p>
+            <img src="../img/featries-tap-bar-img.png" alt="" />
           </div>
 
           <div id="Paris" class="tabcontent">
-            <p>By using our issue tracker and resolution monitoring technologies, all your problems will be resolved according to your SLA.<a href="#0">Learn more.</a></p>
-            <img src="../img/featries-tap-bar-img-1.png" alt="">
+            <p>
+              By using our issue tracker and resolution monitoring technologies,
+              all your problems will be resolved according to your SLA.<a
+                href="#0"
+                >Learn more.</a
+              >
+            </p>
+            <img src="../img/featries-tap-bar-img-1.png" alt="" />
           </div>
 
           <div id="Tokyo" class="tabcontent">
-            <p>You can optimize inspections with visual promoting guides to ensure products and services are being delivered consistently across the company.<a href="#0">Learn more.</a></p>
-            <img src="../img/featries-tap-bar-img.png" alt="">
+            <p>
+              You can optimize inspections with visual promoting guides to
+              ensure products and services are being delivered consistently
+              across the company.<a href="#0">Learn more.</a>
+            </p>
+            <img src="../img/featries-tap-bar-img.png" alt="" />
+          </div>
+        </div>
+        <div class="featuries-accordion">
+          <h2>Accordion</h2>
+
+          <button class="accordion">Section 1</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion">Section 2</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion">Section 3</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
           </div>
         </div>
       </div>
     </section>
     <!-- features  finished -->
     <script src="../main.js"></script>
+    <script>
+      let acc = document.getElementsByClassName("accordion");
+      let i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
-
-
