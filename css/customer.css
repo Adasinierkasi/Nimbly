@@ -267,7 +267,7 @@
   }
   .carousel .card {
     scroll-snap-align: start;
-    height: 372px;
+    height: 362px;
     width: 670px;
     list-style: none;
     background: var(--white);
@@ -275,6 +275,7 @@
     cursor: pointer;
     margin-top: 50px;
     padding-bottom: 15px;
+    /* margin-bottom: 25px; */
     flex-direction: column;
     border-radius: 8px;
   }
