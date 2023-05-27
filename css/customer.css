@@ -424,12 +424,18 @@
   }
   .carousel .card span{
     font-size: 20px;
+    max-width: 768px;
     line-height: 30px;
   }
   .carousel .card{
+    padding-left: 30px;
     max-width: 768px;
     margin: 0 auto;
 
+  }
+  .wrapper {
+    width: 768px;
+    margin: 0 auto;
   }
   .card .div{
     align-items: center;
@@ -471,6 +477,10 @@
     }
     .customer-img-box img{
       display: none;
+    }
+    .carousel .card{
+      max-width: 480px;
+      padding-left: 0;
     }
     .carousel .card  span{
       font-size: 20px;
