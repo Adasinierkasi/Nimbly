@@ -118,14 +118,67 @@ img {
         display: inline-block;
         cursor: pointer;
     }
+    .akardion {
+        height: 0;
+        overflow: hidden;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-size: 16px;
+        color: var(--black);
+    }
+    .input {
+        display: none;
+    }
+    label {
+        font-size: 24px;
+        color: var(--green);
+        font-family: 'Poppins';
+    }
+    :has(#input_1[type='checkbox']:checked) #label_1 {
+        transform: rotate(90deg);
+    }
+    :has(#input_2[type='checkbox']:checked) #label_2 {
+        transform: rotate(90deg);
+    }
+    :has(#input_3[type='checkbox']:checked) #label_3 {
+        transform: rotate(90deg);
+    }
+    :has(#input_4[type='checkbox']:checked) #label_4 {
+        transform: rotate(90deg);
+    }
+    :has(#input_1[type='checkbox']:checked) .akardion_1 {
+        height: auto;
+    }
+    :has(#input_2[type='checkbox']:checked) .akardion_2 {
+        height: auto;
+    }
+    :has(#input_3[type='checkbox']:checked) .akardion_3 {
+        height: auto;
+    }
+    :has(#input_4[type='checkbox']:checked) .akardion_4 {
+        height: auto;
+    }
 
     @media (max-width: 800px) {
         #main_title {
             font-size: 32px;
             line-height: 45px;
         }
+        .smallbox_title {
+            font-size: 20px;
+        }
     }
-    @media (max-width: 580px) {
+    @media (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+        .industries_leftbox {
+            width: 100%;
+        }
+        .industries_rightbox {
+            width: 100%;
+            padding: 0;
+        }
         .industries_box {
             flex-direction: column-reverse;
         }
