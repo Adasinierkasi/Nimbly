@@ -5,6 +5,8 @@ const closeNav = document.querySelector('.nav-close-btn');
 const navbarBlock = document.querySelector('.navbar-mobile-block');
 const navbarCloseIcon = document.querySelector('.navbar-mobile-block i');
 
+const navElement = document.querySelectorAll('.navElement');
+
 openNav.addEventListener('click', () => {
   navbarBlock.classList.add('nv-active');
   navbarCloseIcon.classList.add('nvi-active');
@@ -14,6 +16,13 @@ closeNav.addEventListener('click', () => {
   navbarBlock.classList.remove('nv-active');
   navbarCloseIcon.classList.remove('nvi-active');
 })
+
+for (let i = 0; i < navElement.length; i++) {
+  navElement[i].addEventListener('click', () => {
+    navbarBlock.classList.remove('nv-active');
+    navbarCloseIcon.classList.remove('nvi-active');
+  })
+}
 
 //home finished
 
