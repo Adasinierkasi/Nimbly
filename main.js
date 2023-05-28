@@ -1,3 +1,23 @@
+// home started
+
+const openNav = document.querySelector('.nav-open-btn');
+const closeNav = document.querySelector('.nav-close-btn');
+const navbarBlock = document.querySelector('.navbar-mobile-block');
+const navbarCloseIcon = document.querySelector('.navbar-mobile-block i');
+
+openNav.addEventListener('click', () => {
+  navbarBlock.classList.add('nv-active');
+  navbarCloseIcon.classList.add('nvi-active');
+})
+
+closeNav.addEventListener('click', () => {
+  navbarBlock.classList.remove('nv-active');
+  navbarCloseIcon.classList.remove('nvi-active');
+})
+
+//home finished
+
+//customer started
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
@@ -70,7 +90,7 @@ carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
-
+//customer finished
 
 
 // featuries boshlandi

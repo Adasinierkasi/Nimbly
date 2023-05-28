@@ -31,10 +31,7 @@ html {
     border: 1px solid red;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+
 
 .unsupported-device {
     display: none;
@@ -43,6 +40,10 @@ img {
 /* Universal codes finished */
 
 /* <!-- industries  started --> */
+.industries_leftbox img {
+    max-width: 100%;
+    height: auto;
+}
     .industries_box {
         display: flex;
         flex-wrap: wrap;
@@ -87,6 +88,8 @@ img {
         border-bottom: 1px solid var(--black);
         margin-bottom: 10px;
         padding: 15px 0;
+        cursor: pointer;
+        position: relative;
     }
     .rightbox_small div {
         display: flex;
@@ -126,6 +129,9 @@ img {
         font-size: 16px;
         color: var(--black);
     }
+    .akardion_1{
+        margin-top: 15px;
+    }
     .input {
         display: none;
     }
@@ -133,17 +139,28 @@ img {
         font-size: 24px;
         color: var(--green);
         font-family: 'Poppins';
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
-    :has(#input_1[type='checkbox']:checked) #label_1 {
+    label:hover .smallbox_title{
+        color: var(--green);
+    }
+    label i{
+        font-size: 20px;
+        position: absolute;
+        right: 0px;
+    }
+    :has(#input_1[type='checkbox']:checked) #label_1 i{
         transform: rotate(90deg);
     }
-    :has(#input_2[type='checkbox']:checked) #label_2 {
+    :has(#input_2[type='checkbox']:checked) #label_2 i{
         transform: rotate(90deg);
     }
-    :has(#input_3[type='checkbox']:checked) #label_3 {
+    :has(#input_3[type='checkbox']:checked) #label_3 i{
         transform: rotate(90deg);
     }
-    :has(#input_4[type='checkbox']:checked) #label_4 {
+    :has(#input_4[type='checkbox']:checked) #label_4 i{
         transform: rotate(90deg);
     }
     :has(#input_1[type='checkbox']:checked) .akardion_1 {
@@ -159,16 +176,16 @@ img {
         height: auto;
     }
 
-    @media (max-width: 800px) {
+    @media screen and (min-width: 769px) and (max-width: 1025px) {
         #main_title {
-            font-size: 32px;
+            font-size: 30px;
             line-height: 45px;
         }
         .smallbox_title {
-            font-size: 20px;
+            font-size: 18px;
         }
     }
-    @media (max-width: 600px) {
+    @media screen and (min-width: 481px) and (max-width: 768px) {
         .container {
             width: 100%;
         }
@@ -195,6 +212,55 @@ img {
         }
         .smallbox_title {
             font-size: 16px;
+        }
+        .rightbox_bottom_flex {
+            margin-bottom: 30px;
+            font-size: 19px;
+        }
+        .industries_leftbox {
+            text-align: center;
+        }
+        .akardion_1{
+            font-size: 16px;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        .container {
+            width: 100%;
+        }
+        .industries_leftbox {
+            width: 100%;
+        }
+        .industries_rightbox {
+            width: 100%;
+            padding: 0;
+        }
+        .industries_box {
+            flex-direction: column-reverse;
+        }
+        #main_title {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        .rightbox_title {
+            font-size: 10px;
+        }
+        .rightbox_text {
+            font-size: 10px;
+            line-height: 18px;
+        }
+        .smallbox_title {
+            font-size: 14px;
+        }
+        .rightbox_bottom_flex {
+            margin-bottom: 25px;
+            font-size: 17px;
+        }
+        .industries_leftbox {
+            text-align: center;
+        }
+        .akardion_1{
+            font-size: 14px;
         }
     }
 /* <!-- industries  finished --> */
