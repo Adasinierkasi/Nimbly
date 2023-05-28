@@ -177,90 +177,18 @@ html {
     }
 
     @media screen and (min-width: 769px) and (max-width: 1025px) {
-        #main_title {
-            font-size: 30px;
-            line-height: 45px;
-        }
-        .smallbox_title {
-            font-size: 18px;
-        }
+        
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
         .container {
             width: 100%;
         }
-        .industries_leftbox {
-            width: 100%;
-        }
-        .industries_rightbox {
-            width: 100%;
-            padding: 0;
-        }
-        .industries_box {
-            flex-direction: column-reverse;
-        }
-        #main_title {
-            font-size: 24px;
-            line-height: 32px;
-        }
-        .rightbox_title {
-            font-size: 12px;
-        }
-        .rightbox_text {
-            font-size: 12px;
-            line-height: 20px;
-        }
-        .smallbox_title {
-            font-size: 16px;
-        }
-        .rightbox_bottom_flex {
-            margin-bottom: 30px;
-            font-size: 19px;
-        }
-        .industries_leftbox {
-            text-align: center;
-        }
-        .akardion_1{
-            font-size: 16px;
-        }
+        
     }
     @media screen and (min-width: 320px) and (max-width: 480px) {
         .container {
             width: 100%;
         }
-        .industries_leftbox {
-            width: 100%;
-        }
-        .industries_rightbox {
-            width: 100%;
-            padding: 0;
-        }
-        .industries_box {
-            flex-direction: column-reverse;
-        }
-        #main_title {
-            font-size: 22px;
-            line-height: 32px;
-        }
-        .rightbox_title {
-            font-size: 10px;
-        }
-        .rightbox_text {
-            font-size: 10px;
-            line-height: 18px;
-        }
-        .smallbox_title {
-            font-size: 14px;
-        }
-        .rightbox_bottom_flex {
-            margin-bottom: 25px;
-            font-size: 17px;
-        }
-        .industries_leftbox {
-            text-align: center;
-        }
-        .akardion_1{
-            font-size: 14px;
-        }
+        
     }
 /* <!-- industries  finished --> */
