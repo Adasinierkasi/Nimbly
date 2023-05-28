@@ -1,675 +1,776 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styly -->
+    <link rel="stylesheet" href="./main.css" />
+    <!-- style favicon -->
+    <link
+      rel="shortcut icon"
+      href="./img/nimbly-logo.svg"
+      type="image/x-icon"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Nimbly</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- styly -->
-  <link rel="stylesheet" href="./main.css" />
-  <!-- style favicon -->
-  <link rel="shortcut icon" href="./img/nimbly-logo.svg" type="image/x-icon" />
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Nimbly</title>
-</head>
+  <body>
+    <!-- Unsupported device started -->
+    <div class="unsupported-device">
+      <p>
+        Sorry, our site is unable to work on your device. Please use another
+        device with a larger screen to use the site!
+      </p>
+    </div>
+    <!-- Unsupported device started -->
 
-<body>
-  <!-- Unsupported device started -->
-  <div class="unsupported-device">
-    <p>
-      Sorry, our site is unable to work on your device. Please use another
-      device with a larger screen to use the site!
-    </p>
-  </div>
-  <!-- Unsupported device started -->
-
-  <section class="nimbly-wrap">
-    <!-- home pages started -->
-    <section class="home-wrap">
-      <div class="navbar-mobile-block">
-        <i class="fa fa-times nav-close-btn"></i>
-        <ul class="d-flex">
-          <li><a href="#0">Features</a></li>
-          <li><a href="#0">How it works</a></li>
-          <li><a href="#0">Industries</a></li>
-          <li><a href="#0">Insight</a></li>
-        </ul>
-      </div>
-      <div class="header-wrap">
-        <div class="navbar">
-          <div class="container d-flex navbar-wrap">
-            <div class="navbar-left d-flex">
-              <a href="#0" class="navbar-logo"><img src="../img/nimbly-logo.svg" alt="logo" /></a>
-              <ul class="d-flex">
-                <li><a href="#0">Features</a></li>
-                <li><a href="#0">How it works</a></li>
-                <li><a href="#0">Industries</a></li>
-                <li><a href="#0">Insight</a></li>
-              </ul>
-            </div>
-            <div class="navbar-right d-flex">
-              <a href="#0" class="navbar-signin-text">
-                <img src="../img/signin-user.svg" alt="user-icon" />
-                Sign In
-              </a>
-              <a href="#0" class="navbar-signin-icon">
-                <img src="../img/signin-user.svg" alt="user-icon" />
-              </a>
-              <a href="#0" class="request-demo-btn"> Request Demo </a>
+    <section class="nimbly-wrap">
+      <!-- home pages started -->
+      <section class="home-wrap">
+        <div class="navbar-mobile-block">
+          <i class="fa fa-times nav-close-btn"></i>
+          <ul class="d-flex">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#howit">How it works</a></li>
+            <li><a href="#indus">Industries</a></li>
+            <li><a href="#insig">Insight</a></li>
+          </ul>
+        </div>
+        <div class="header-wrap">
+          <div class="navbar">
+            <div class="container d-flex navbar-wrap">
+              <div class="navbar-left d-flex">
+                <a href="#0" class="navbar-logo"
+                  ><img src="../img/nimbly-logo.svg" alt="logo"
+                /></a>
+                <ul class="d-flex">
+                  <li><a href="#features">Features</a></li>
+                  <li><a href="#howit">How it works</a></li>
+                  <li><a href="#indus">Industries</a></li>
+                  <li><a href="#insig">Insight</a></li>
+                </ul>
+              </div>
+              <div class="navbar-right d-flex">
+                <a href="#0" class="navbar-signin-text">
+                  <img src="../img/signin-user.svg" alt="user-icon" />
+                  Sign In
+                </a>
+                <a href="#0" class="navbar-signin-icon">
+                  <img src="../img/signin-user.svg" alt="user-icon" />
+                </a>
+                <a href="#0" class="request-demo-btn"> Request Demo </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="header">
-          <div class="container">
-            <div class="navbar-mobile d-flex">
-              <img src="../img/nav-bars.svg" alt="bars-btn" class="nav-open-btn" />
-              <a href="#0"><img src="../img/nimbly-logo-mobile.svg" alt="logo" /></a>
-              <a href="#0">
-                <img src="../img/signin-user-green.svg" alt="user-icon" />
-              </a>
-            </div>
+          <div class="header">
+            <div class="container">
+              <div class="navbar-mobile d-flex">
+                <img
+                  src="../img/nav-bars.svg"
+                  alt="bars-btn"
+                  class="nav-open-btn"
+                />
+                <a href="#0"
+                  ><img src="../img/nimbly-logo-mobile.svg" alt="logo"
+                /></a>
+                <a href="#0">
+                  <img src="../img/signin-user-green.svg" alt="user-icon" />
+                </a>
+              </div>
 
-            <div class="header-content d-flex">
-              <div class="header-left-content">
-                <h1>
-                  Make your operations Easier and Efficient with
-                  <span style="color: #13ab4e">Nimbly</span>
-                </h1>
-                <p>
-                  Digitize your business operations and gain real-time
-                  analytics on your team progress anytime, anywhere.
-                </p>
-                <div class="d-flex header-buttons">
-                  <a href="#0" class="request-demo-btn">Request Demo</a>
-                  <a href="tel:123-456-7890">
-                    <img src="../img/header-phone-icon.svg" alt="phone-icon" />
-                    Free Consultation
-                  </a>
+              <div class="header-content d-flex">
+                <div class="header-left-content">
+                  <h1>
+                    Make your operations Easier and Efficient with
+                    <span style="color: #13ab4e">Nimbly</span>
+                  </h1>
+                  <p>
+                    Digitize your business operations and gain real-time
+                    analytics on your team progress anytime, anywhere.
+                  </p>
+                  <div class="d-flex header-buttons">
+                    <a href="#0" class="request-demo-btn">Request Demo</a>
+                    <a href="tel:123-456-7890">
+                      <img
+                        src="../img/header-phone-icon.svg"
+                        alt="phone-icon"
+                      />
+                      Free Consultation
+                    </a>
+                  </div>
+                </div>
+                <div class="header-right-content">
+                  <img src="../img/header-phone-img.png" alt="phone-img" />
                 </div>
               </div>
-              <div class="header-right-content">
-                <img src="../img/header-phone-img.png" alt="phone-img" />
-              </div>
+              <p class="header-trusted-text">
+                Trusted by 10,000+ the world’s fastest growing companies
+                including:
+              </p>
             </div>
-            <p class="header-trusted-text">
-              Trusted by 10,000+ the world’s fastest growing companies
-              including:
-            </p>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- home pages finished -->
+      </section>
+      <!-- home pages finished -->
 
-    <!-- management  started -->
-    <section class="management-wrap">
-      <div class="container">
-        <marquee behavior="alternate" direction="right">
-          <a href="#0"><img src="./img/kfc b 1.svg" alt="img" /></a>
-          <a href="#0"><img src="./img/cargill 1.svg" alt="img" /></a>
-          <a href="#0"><img src="./img/7elven 1.svg" alt="img" /></a>
-          <a href="#0"><img src="./img/cargill 1.svg" alt="img" /></a>
-          <a href="#0"><img src="./img/dq 1.svg" alt="img" /></a>
-          <a href="#0"><img src="./img/toto 1.svg" alt="img" /></a>
-          <a href="#0"><img src="./img/kfc b 1.svg" alt="img" /></a>
-          <a href="#0"><img src="./img/cargill 1.svg" alt="img" /></a>
-          <a href="#0"><img src="./img/7elven 1.svg" alt="img" /></a>
-          <a href="#0"><img src="./img/cargill 1.svg" alt="img" /></a>
-          <a href="#0"><img src="./img/dq 1.svg" alt="img" /></a>
-          <a href="#0"><img src="./img/toto 1.svg" alt="img" /></a>
-        </marquee>
-        <div class="for-video">
-          <h4>WAYS NIMBLY HELPS YOU</h4>
-          <h2>
-            Helping you maximize operations management with digitization
-          </h2>
-          <h6>
-            Nimbly will digitize your business operations so you'll get
-            real-time analytics on your team's progress anytime, anywhere even
-            without an internet connection.
-          </h6>
-          <video id="player" playsinline controls data-poster="./path/to/poster.jpg">
-            <source src="./video/Manzara.mp4" type="video/mp4" />
-          </video>
+      <!-- management  started -->
+      <section class="management-wrap">
+        <div class="container">
+          <marquee behavior="alternate" direction="right">
+            <a href="#0"><img src="./img/kfc b 1.svg" alt="img" /></a>
+            <a href="#0"><img src="./img/cargill 1.svg" alt="img" /></a>
+            <a href="#0"><img src="./img/7elven 1.svg" alt="img" /></a>
+            <a href="#0"><img src="./img/cargill 1.svg" alt="img" /></a>
+            <a href="#0"><img src="./img/dq 1.svg" alt="img" /></a>
+            <a href="#0"><img src="./img/toto 1.svg" alt="img" /></a>
+            <a href="#0"><img src="./img/kfc b 1.svg" alt="img" /></a>
+            <a href="#0"><img src="./img/cargill 1.svg" alt="img" /></a>
+            <a href="#0"><img src="./img/7elven 1.svg" alt="img" /></a>
+            <a href="#0"><img src="./img/cargill 1.svg" alt="img" /></a>
+            <a href="#0"><img src="./img/dq 1.svg" alt="img" /></a>
+            <a href="#0"><img src="./img/toto 1.svg" alt="img" /></a>
+          </marquee>
+          <div class="for-video">
+            <h4>WAYS NIMBLY HELPS YOU</h4>
+            <h2>
+              Helping you maximize operations management with digitization
+            </h2>
+            <h6>
+              Nimbly will digitize your business operations so you'll get
+              real-time analytics on your team's progress anytime, anywhere even
+              without an internet connection.
+            </h6>
+            <video
+              id="player"
+              playsinline
+              controls
+              data-poster="./path/to/poster.jpg"
+            >
+              <source src="./video/Manzara.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- management  finished -->
+      </section>
+      <!-- management  finished -->
 
-    <!-- features started -->
-    <section class="features-wrap">
-      <div class="container">
-        <div class="features-wrap-title">
-          <p>OUR FEATURES</p>
-          <h1>Discover How Our Features Can Simplify Your Work Flow</h1>
-        </div>
-        <div class="featuries-tap-bar">
-          <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')">
+      <!-- features started -->
+      <section class="features-wrap" id="features">
+        <div class="container">
+          <div class="features-wrap-title">
+            <p>OUR FEATURES</p>
+            <h1>Discover How Our Features Can Simplify Your Work Flow</h1>
+          </div>
+          <div class="featuries-tap-bar">
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'London')">
+                <img src="../img/featries-real-time.svg" alt="" />
+                <p>Real-time Audits</p>
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Paris')">
+                <img src="../img/featries-easy-digital.svg" alt="" />
+                <p>Easy Digital Audits</p>
+              </button>
+              <button
+                class="tablinks"
+                id="defaultOpen"
+                onclick="openCity(event, 'Tokyo')"
+              >
+                <img src="../img/featries-chats.svg" alt="" />
+                <p>Issue Tracker</p>
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Paris')">
+                <img src="../img/featries-robust.svg" alt="" />
+                <p>Robust Validation</p>
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'London')">
+                <img src="../img/featries-report.svg" alt="" />
+                <p>Report & Analytics</p>
+              </button>
+            </div>
+
+            <div id="London" class="tabcontent">
+              <p>
+                You can optimize inspections with visual promoting guides to
+                ensure products and services are being delivered consistently
+                across the company. <a href="#0">Learn more.</a>
+              </p>
+              <img src="../img/featries-tap-bar-img.png" alt="" />
+            </div>
+
+            <div id="Paris" class="tabcontent">
+              <p>
+                By using our issue tracker and resolution monitoring
+                technologies, all your problems will be resolved according to
+                your SLA.<a href="#0">Learn more.</a>
+              </p>
+              <img src="../img/featries-tap-bar-img-1.png" alt="" />
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+              <p>
+                You can optimize inspections with visual promoting guides to
+                ensure products and services are being delivered consistently
+                across the company.<a href="#0">Learn more.</a>
+              </p>
+              <img src="../img/featries-tap-bar-img.png" alt="" />
+            </div>
+          </div>
+
+          <div class="featuries-accordion">
+            <button class="accordion">
               <img src="../img/featries-real-time.svg" alt="" />
               <p>Real-time Audits</p>
+              <i class="fa-solid fa-chevron-down"></i>
             </button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">
+            <div class="panel">
+              <p>
+                You can optimize inspections with visual promoting guides to
+                ensure products and services are being delivered consistently
+                across the company. <a href="#0">Learn more.</a>
+              </p>
+              <img src="../img/featries-tap-bar-img.png" alt="" />
+            </div>
+
+            <button class="accordion">
               <img src="../img/featries-easy-digital.svg" alt="" />
               <p>Easy Digital Audits</p>
+              <i class="fa-solid fa-chevron-down"></i>
             </button>
-            <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Tokyo')">
+            <div class="panel">
+              <p>
+                By using our issue tracker and resolution monitoring
+                technologies, all your problems will be resolved according to
+                your SLA.<a href="#0">Learn more.</a>
+              </p>
+              <img src="../img/featries-tap-bar-img-1.png" alt="" />
+            </div>
+
+            <button class="accordion">
               <img src="../img/featries-chats.svg" alt="" />
               <p>Issue Tracker</p>
+              <i class="fa-solid fa-chevron-down"></i>
             </button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">
+            <div class="panel">
+              <p>
+                By using our issue tracker and resolution monitoring
+                technologies, all your problems will be resolved according to
+                your SLA.<a href="#0">Learn more.</a>
+              </p>
+              <img src="../img/featries-tap-bar-img-1.png" alt="" />
+            </div>
+
+            <button class="accordion">
               <img src="../img/featries-robust.svg" alt="" />
               <p>Robust Validation</p>
+              <i class="fa-solid fa-chevron-down"></i>
             </button>
-            <button class="tablinks" onclick="openCity(event, 'London')">
+            <div class="panel">
+              <p>
+                You can optimize inspections with visual promoting guides to
+                ensure products and services are being delivered consistently
+                across the company. <a href="#0">Learn more.</a>
+              </p>
+              <img src="../img/featries-tap-bar-img.png" alt="" />
+            </div>
+
+            <button class="accordion">
               <img src="../img/featries-report.svg" alt="" />
               <p>Report & Analytics</p>
+              <i class="fa-solid fa-chevron-down"></i>
             </button>
-          </div>
-
-          <div id="London" class="tabcontent">
-            <p>
-              You can optimize inspections with visual promoting guides to
-              ensure products and services are being delivered consistently
-              across the company. <a href="#0">Learn more.</a>
-            </p>
-            <img src="../img/featries-tap-bar-img.png" alt="" />
-          </div>
-
-          <div id="Paris" class="tabcontent">
-            <p>
-              By using our issue tracker and resolution monitoring
-              technologies, all your problems will be resolved according to
-              your SLA.<a href="#0">Learn more.</a>
-            </p>
-            <img src="../img/featries-tap-bar-img-1.png" alt="" />
-          </div>
-
-          <div id="Tokyo" class="tabcontent">
-            <p>
-              You can optimize inspections with visual promoting guides to
-              ensure products and services are being delivered consistently
-              across the company.<a href="#0">Learn more.</a>
-            </p>
-            <img src="../img/featries-tap-bar-img.png" alt="" />
+            <div class="panel">
+              <p>
+                By using our issue tracker and resolution monitoring
+                technologies, all your problems will be resolved according to
+                your SLA.<a href="#0">Learn more.</a>
+              </p>
+              <img src="../img/featries-tap-bar-img-1.png" alt="" />
+            </div>
           </div>
         </div>
+      </section>
+      <!-- features finished -->
 
-        <div class="featuries-accordion">
-          <button class="accordion">
-            <img src="../img/featries-real-time.svg" alt="" />
-            <p>Real-time Audits</p>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="panel">
+      <!-- fastwork  started -->
+      <section class="fastwork-wrap" id="howit">
+        <div class="container">
+          <div class="fastwork-text">
             <p>
-              You can optimize inspections with visual promoting guides to
-              ensure products and services are being delivered consistently
-              across the company. <a href="#0">Learn more.</a>
+              We support various organizations to fundementally change the way
+              we operate for a better future.
             </p>
-            <img src="../img/featries-tap-bar-img.png" alt="" />
+          </div>
+          <div class="fastwork-in">
+            <div class="fastwork-one">
+              <span>57,000</span>
+              <p align="center">Hours your saved</p>
+            </div>
+            <hr />
+            <div class="fastwork-one">
+              <span class="txt">59%</span>
+              <p align="center">Inspection cost saved</p>
+            </div>
+            <hr />
+            <div class="fastwork-one">
+              <span class="txt">86%</span>
+              <p align="center">Increase in productivity</p>
+            </div>
           </div>
 
-          <button class="accordion">
-            <img src="../img/featries-easy-digital.svg" alt="" />
-            <p>Easy Digital Audits</p>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="panel">
-            <p>
-              By using our issue tracker and resolution monitoring
-              technologies, all your problems will be resolved according to
-              your SLA.<a href="#0">Learn more.</a>
-            </p>
-            <img src="../img/featries-tap-bar-img-1.png" alt="" />
-          </div>
+          <div class="fastwork-about">
+            <div class="fastwork-about-text">
+              <h4>how it works</h4>
+              <h1>
+                Fast, easy steps<br />
+                to start Operational Excellence
+              </h1>
+              <p class="text1">
+                Nimbly works to speed up your work,<br />
+                you won't spend a lot of time getting started.
+              </p>
+              <div class="border-button"></div>
+              <h3>Know what to prioritize</h3>
+              <p class="text2">
+                Reports show you which projects are most profitable and which
+                ones drain your team’s time.
+              </p>
+              <h3>Make it clear with digitization</h3>
+              <p class="text3">
+                Go paperless to digitize your checklists and automate your
+                reporting.
+              </p>
+              <a href="#"
+                >See how Nimbly works <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="fast-about-image">
+              <img src="/img/fast-about-img.png" alt="images" />
 
-          <button class="accordion">
-            <img src="../img/featries-chats.svg" alt="" />
-            <p>Issue Tracker</p>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="panel">
-            <p>
-              By using our issue tracker and resolution monitoring
-              technologies, all your problems will be resolved according to
-              your SLA.<a href="#0">Learn more.</a>
-            </p>
-            <img src="../img/featries-tap-bar-img-1.png" alt="" />
-          </div>
-
-          <button class="accordion">
-            <img src="../img/featries-robust.svg" alt="" />
-            <p>Robust Validation</p>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="panel">
-            <p>
-              You can optimize inspections with visual promoting guides to
-              ensure products and services are being delivered consistently
-              across the company. <a href="#0">Learn more.</a>
-            </p>
-            <img src="../img/featries-tap-bar-img.png" alt="" />
-          </div>
-
-          <button class="accordion">
-            <img src="../img/featries-report.svg" alt="" />
-            <p>Report & Analytics</p>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="panel">
-            <p>
-              By using our issue tracker and resolution monitoring
-              technologies, all your problems will be resolved according to
-              your SLA.<a href="#0">Learn more.</a>
-            </p>
-            <img src="../img/featries-tap-bar-img-1.png" alt="" />
+              <div class="circular-wrapper">
+                <p>Report Completion <i class="fa-solid fa-circle-info"></i></p>
+                <div class="wrapper_about">
+                  <div class="circular-progress">
+                    <div class="progress-value">0%</div>
+                  </div>
+                  <div class="nummber">
+                    <h3>
+                      report<br />
+                      completion
+                    </h3>
+                    <h4>6.0% <i class="fa-solid fa-caret-up"></i></h4>
+                    <p>vs 28 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- features finished -->
+      </section>
+      <!-- fastwork  finished -->
 
-    <!-- fastwork  started -->
-    <section class="fastwork-wrap">
-      <div class="container">
-        <div class="fastwork-text">
-          <p>
-            We support various organizations to fundementally change the way we
-            operate for a better future.
+      <!-- industries started -->
+      <section class="industries" id="indus">
+        <div class="container">
+          <div class="industries_box">
+            <div class="industries_leftbox">
+              <img
+                src="../img/industries_img.png"
+                alt="industries_img"
+                loading="lazy"
+              />
+            </div>
+            <div class="industries_rightbox">
+              <h3 class="rightbox_title">INDUSTRIES</h3>
+              <h1 id="main_title">
+                Desk word or field work, we've got you covered
+              </h1>
+              <p class="rightbox_text">
+                Businesses in more than 100 different industries track and
+                automate with Nimbly.
+              </p>
+              <div class="rightbox_main">
+                <div class="rightbox_small">
+                  <label for="input_1" id="label_1"
+                    ><img
+                      src="../img/industries_small_1.png"
+                      alt="industries img 1"
+                      loading="lazy" />
+                    <span class="smallbox_title">Food & Beverage</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></label>
+                  <input type="checkbox" class="input" id="input_1" />
+                  <div class="akardion_1 akardion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis eos repellat obcaecati, cupiditate magni quidem ex
+                    asperiores quaerat eveniet pariatur minima nihil consequatur
+                    nisi hic cumque cum laborum dolores delectus commodi! In
+                    debitis, ratione esse autem aperiam illum nemo asperiores
+                    voluptatem fugiat magni veritatis reprehenderit quae sequi
+                    totam cumque nobis!
+                  </div>
+                </div>
+                <div class="rightbox_small">
+                  <label for="input_2" id="label_2"
+                    ><img
+                      src="../img/industries_small_2.png"
+                      alt="industries img 2"
+                      loading="lazy" />
+                    <span class="smallbox_title">Retail</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></label>
+                  <input type="checkbox" class="input" id="input_2" />
+                  <div class="akardion_2 akardion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis eos repellat obcaecati, cupiditate magni quidem ex
+                    asperiores quaerat eveniet pariatur minima nihil consequatur
+                    nisi hic cumque cum laborum dolores delectus commodi! In
+                    debitis, ratione esse autem aperiam illum nemo asperiores
+                    voluptatem fugiat magni veritatis reprehenderit quae sequi
+                    totam cumque nobis!
+                  </div>
+                </div>
+                <div class="rightbox_small">
+                  <label for="input_3" id="label_3"
+                    ><img
+                      src="../img/industries_small_3.png"
+                      alt="industries img 3"
+                      loading="lazy" />
+                    <span class="smallbox_title">Manufacturing</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></label>
+                  <input type="checkbox" class="input" id="input_3" />
+                  <div class="akardion_3 akardion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis eos repellat obcaecati, cupiditate magni quidem ex
+                    asperiores quaerat eveniet pariatur minima nihil consequatur
+                    nisi hic cumque cum laborum dolores delectus commodi! In
+                    debitis, ratione esse autem aperiam illum nemo asperiores
+                    voluptatem fugiat magni veritatis reprehenderit quae sequi
+                    totam cumque nobis!
+                  </div>
+                </div>
+                <div class="rightbox_small">
+                  <label for="input_4" id="label_4"
+                    ><img
+                      src="../img/industries_small_4.png"
+                      alt="industries img 4"
+                      loading="lazy" />
+                    <span class="smallbox_title">Agriculture</span
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></label>
+                  <input type="checkbox" class="input" id="input_4" />
+                  <div class="akardion_4 akardion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis eos repellat obcaecati, cupiditate magni quidem ex
+                    asperiores quaerat eveniet pariatur minima nihil consequatur
+                    nisi hic cumque cum laborum dolores delectus commodi! In
+                    debitis, ratione esse autem aperiam illum nemo asperiores
+                    voluptatem fugiat magni veritatis reprehenderit quae sequi
+                    totam cumque nobis!
+                  </div>
+                </div>
+              </div>
+              <div class="rightbox_bottom_flex">
+                <span>Select your industry</span>
+                <span>→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- industries finished -->
+
+      <!-- customer started -->
+      <section class="customer-wrap">
+        <div class="container">
+          <div class="text-box">
+            <p>CUSTOMER SAY</p>
+          </div>
+          <div class="customer-texts">
+            <h2>See How Businesses like yours found answers width Nimbly</h2>
+            <h3>
+              From start-ups to enterprises, we’ve helped transform operations
+              for clients from various industrial backgrounds.
+            </h3>
+          </div>
+          <div class="customer-box">
+            <div class="customer-img-box">
+              <img src="../img/picture.svg" alt="img" loading="lazy" />
+            </div>
+
+            <div class="wrapper">
+              <i id="left"
+                ><img src="../img/Frame.svg" alt="img" loading="lazy"
+              /></i>
+              <ul class="carousel">
+                <li class="card">
+                  <span
+                    >Nimbly speeds up our issue resolution in Kopi Kenangan.
+                    With Nimbly's issue tracker, the headquarters can receive
+                    real-time notifications from outlets and follow them up
+                    instantly. Nimbly not only reduces paper use, but also
+                    simplifies knowledge sharing, smoothens the information
+                    flow, and provides seamless access to data more.
+                  </span>
+                  <div class="div">
+                    <img
+                      src="../img/Nimbly-logos-09-150x150 1.svg"
+                      alt="img"
+                      loading="lazy"
+                    />
+                    <div class="miniBox">
+                      <h3>Tondi Sihombing</h3>
+                      <p>Operations Manager, Kopi Kenangan</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="card">
+                  <span
+                    >Nimbly speeds up our issue resolution in Kopi Kenangan.
+                    With Nimbly's issue tracker, the headquarters can receive
+                    real-time notifications from outlets and follow them up
+                    instantly. Nimbly not only reduces paper use, but also
+                    simplifies knowledge sharing, smoothens the information
+                    flow, and provides seamless access to data more.
+                  </span>
+                  <div class="div">
+                    <img
+                      src="../img/Nimbly-logos-09-150x150 1.svg"
+                      alt="img"
+                      loading="lazy"
+                    />
+                    <div class="miniBox">
+                      <h3>Tondi Sihombing</h3>
+                      <p>Operations Manager, Kopi Kenangan</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="card">
+                  <span
+                    >Nimbly speeds up our issue resolution in Kopi Kenangan.
+                    With Nimbly's issue tracker, the headquarters can receive
+                    real-time notifications from outlets and follow them up
+                    instantly. Nimbly not only reduces paper use, but also
+                    simplifies knowledge sharing, smoothens the information
+                    flow, and provides seamless access to data more.</span
+                  >
+
+                  <div class="div">
+                    <img
+                      src="../img/Nimbly-logos-09-150x150 1.svg"
+                      alt="img"
+                      loading="lazy"
+                    />
+                    <div class="miniBox">
+                      <h3>Tondi Sihombing</h3>
+                      <p>Operations Manager, Kopi Kenangan</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="card">
+                  <span
+                    >Nimbly speeds up our issue resolution in Kopi Kenangan.
+                    With Nimbly's issue tracker, the headquarters can receive
+                    real-time notifications from outlets and follow them up
+                    instantly. Nimbly not only reduces paper use, but also
+                    simplifies knowledge sharing, smoothens the information
+                    flow, and provides seamless access to data more.</span
+                  >
+                  <div class="div">
+                    <img
+                      src="../img/Nimbly-logos-09-150x150 1.svg"
+                      alt="img"
+                      loading="lazy"
+                    />
+                    <div class="miniBox">
+                      <h3>Tondi Sihombing</h3>
+                      <p>Operations Manager, Kopi Kenangan</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="card">
+                  <span
+                    >Nimbly speeds up our issue resolution in Kopi Kenangan.
+                    With Nimbly's issue tracker, the headquarters can receive
+                    real-time notifications from outlets and follow them up
+                    instantly. Nimbly not only reduces paper use, but also
+                    simplifies knowledge sharing, smoothens the information
+                    flow, and provides seamless access to data more.</span
+                  >
+                  <div class="div">
+                    <img
+                      src="../img/Nimbly-logos-09-150x150 1.svg"
+                      alt="img"
+                      loading="lazy"
+                    />
+                    <div class="miniBox">
+                      <h3>Tondi Sihombing</h3>
+                      <p>Operations Manager, Kopi Kenangan</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <br />
+              <i id="right"
+                ><img src="../img/Frame (1).svg" alt="img" loading="lazy"
+              /></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- customer finished -->
+
+      <!-- emprower started -->
+      <section class="emprower-wrap" id="insig">
+        <div class="container">
+          <h2 class="emp-big-text">
+            Empower your team today. Get started with intelligent workflows
+          </h2>
+          <p class="emp-small-text">
+            Nimbly brings you new opportunities through seamless digitization
           </p>
+          <form>
+            <label for="1">Full Name :</label>
+            <input type="text" id="1" placeholder="Enter your full name" />
+            <label for="2">Email Address :</label>
+            <input type="email" id="2" placeholder="Enter your email address" />
+            <label for="3">Mobile :</label>
+            <input type="tel" id="3" placeholder="Enter your mobile" />
+            <label for="4">Company Name :</label>
+            <input type="text" id="4" placeholder="Enter your company name" />
+            <label for="5">Tittle :</label>
+            <input type="text" id="4" placeholder="Enter your tittle" />
+            <label for="6">Industry :</label>
+            <select name="emp" id="emp">
+              <option value="">Select Industry</option>
+              <option value="">Select Industry</option>
+              <option value="">Select Industry</option>
+              <option value="">Select Industry</option>
+            </select>
+            <button class="emp-btn">Request Demo</button>
+          </form>
         </div>
-        <div class="fastwork-in">
-          <div class="fastwork-one">
-            <span>57,000</span>
-            <p align="center">Hours your saved</p>
-          </div>
-          <hr>
-          <div class="fastwork-one">
-            <span class="txt">59%</span>
-            <p align="center">Inspection cost saved</p>
-          </div>
-          <hr>
-          <div class="fastwork-one">
-            <span class="txt">86%</span>
-            <p align="center">Increase in productivity</p>
-          </div>
-        </div>
+      </section>
+      <!-- emprower finished -->
 
-        <div class="fastwork-about">
-          <div class="fastwork-about-text">
-            <h4>how it works</h4>
-            <h1>Fast, easy steps<br>
-              to start Operational
-              Excellence</h1>
-            <p class="text1">Nimbly works to speed up your work,<br>
-              you won't spend a lot of time getting started.</p>
-            <div class="border-button"></div>
-            <h3>Know what to prioritize</h3>
-            <p class="text2">Reports show you which projects are most
-              profitable and which ones drain your team’s time.</p>
-            <h3>Make it clear with digitization</h3>
-            <p class="text3">Go paperless to digitize your checklists and
-              automate your reporting.</p>
-            <a href="#">See how Nimbly works <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-          <div class="fast-about-image">
-            <img src="/img/fast-about-img.png" alt="images">
-
-            <div class="circular-wrapper">
-              <p>Report Completion <i class="fa-solid fa-circle-info"></i></p>
-              <div class="wrapper_about">
-                <div class="circular-progress">
-                  <div class="progress-value">
-                    0%
-                  </div>
-
-                </div>
-                <div class="nummber">
-                  <h3>report<br> completion</h3>
-                  <h4>6.0% <i class="fa-solid fa-caret-up"></i></h4>
-                  <p>vs 28 days ago</p>
-                </div>
-              </div>
+      <!-- footer started -->
+      <footer>
+        <div class="container">
+          <div class="footer-left">
+            <div class="logo-footer">
+              <img src="../img/footer-logo.svg" alt="logo" loading="lazy" />
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- fastwork  finished -->
-
-    <!-- industries started -->
-    <section class="industries">
-      <div class="container">
-        <div class="industries_box">
-          <div class="industries_leftbox">
-            <img src="../img/industries_img.png" alt="industries_img" loading="lazy" />
-          </div>
-          <div class="industries_rightbox">
-            <h3 class="rightbox_title">INDUSTRIES</h3>
-            <h1 id="main_title">
-              Desk word or field work, we've got you covered
-            </h1>
-            <p class="rightbox_text">
-              Businesses in more than 100 different industries track and
-              automate with Nimbly.
+            <p class="footer-text">
+              Digitize your business operations and <br />
+              gain real-time analytics on your team progress <br />
+              anytime, anywhere.
             </p>
-            <div class="rightbox_main">
-              <div class="rightbox_small">
-                <label for="input_1" id="label_1"><img src="../img/industries_small_1.png" alt="industries img 1"
-                    loading="lazy" />
-                  <span class="smallbox_title">Food & Beverage</span><i class="fa-solid fa-chevron-right"></i></label>
-                <input type="checkbox" class="input" id="input_1" />
-                <div class="akardion_1 akardion">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quis eos repellat obcaecati, cupiditate magni quidem ex
-                  asperiores quaerat eveniet pariatur minima nihil consequatur
-                  nisi hic cumque cum laborum dolores delectus commodi! In
-                  debitis, ratione esse autem aperiam illum nemo asperiores
-                  voluptatem fugiat magni veritatis reprehenderit quae sequi
-                  totam cumque nobis!
-                </div>
-              </div>
-              <div class="rightbox_small">
-                <label for="input_2" id="label_2"><img src="../img/industries_small_2.png" alt="industries img 2"
-                    loading="lazy" />
-                  <span class="smallbox_title">Retail</span><i class="fa-solid fa-chevron-right"></i></label>
-                <input type="checkbox" class="input" id="input_2" />
-                <div class="akardion_2 akardion">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quis eos repellat obcaecati, cupiditate magni quidem ex
-                  asperiores quaerat eveniet pariatur minima nihil consequatur
-                  nisi hic cumque cum laborum dolores delectus commodi! In
-                  debitis, ratione esse autem aperiam illum nemo asperiores
-                  voluptatem fugiat magni veritatis reprehenderit quae sequi
-                  totam cumque nobis!
-                </div>
-              </div>
-              <div class="rightbox_small">
-                <label for="input_3" id="label_3"><img src="../img/industries_small_3.png" alt="industries img 3"
-                    loading="lazy" />
-                  <span class="smallbox_title">Manufacturing</span><i class="fa-solid fa-chevron-right"></i></label>
-                <input type="checkbox" class="input" id="input_3" />
-                <div class="akardion_3 akardion">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quis eos repellat obcaecati, cupiditate magni quidem ex
-                  asperiores quaerat eveniet pariatur minima nihil consequatur
-                  nisi hic cumque cum laborum dolores delectus commodi! In
-                  debitis, ratione esse autem aperiam illum nemo asperiores
-                  voluptatem fugiat magni veritatis reprehenderit quae sequi
-                  totam cumque nobis!
-                </div>
-              </div>
-              <div class="rightbox_small">
-                <label for="input_4" id="label_4"><img src="../img/industries_small_4.png" alt="industries img 4"
-                    loading="lazy" />
-                  <span class="smallbox_title">Agriculture</span><i class="fa-solid fa-chevron-right"></i></label>
-                <input type="checkbox" class="input" id="input_4" />
-                <div class="akardion_4 akardion">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quis eos repellat obcaecati, cupiditate magni quidem ex
-                  asperiores quaerat eveniet pariatur minima nihil consequatur
-                  nisi hic cumque cum laborum dolores delectus commodi! In
-                  debitis, ratione esse autem aperiam illum nemo asperiores
-                  voluptatem fugiat magni veritatis reprehenderit quae sequi
-                  totam cumque nobis!
-                </div>
-              </div>
-            </div>
-            <div class="rightbox_bottom_flex">
-              <span>Select your industry</span>
-              <span>→</span>
+            <div class="footer-img">
+              <img src="../img/footer-img.svg" alt="img" loading="lazy" />
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- industries finished -->
-
-    <!-- customer started -->
-    <section class="customer-wrap">
-      <div class="container">
-        <div class="text-box">
-          <p>CUSTOMER SAY</p>
-        </div>
-        <div class="customer-texts">
-          <h2>See How Businesses like yours found answers width Nimbly</h2>
-          <h3>
-            From start-ups to enterprises, we’ve helped transform operations
-            for clients from various industrial backgrounds.
-          </h3>
-        </div>
-        <div class="customer-box">
-          <div class="customer-img-box">
-            <img src="../img/picture.svg" alt="img" loading="lazy" />
+          <div class="footer-center">
+            <ul>
+              <li>Nimbly</li>
+              <li><a href="#0">About Us</a></li>
+              <li><a href="#0">Features</a></li>
+              <li><a href="#0">Industries</a></li>
+              <li><a href="#0">How it Works</a></li>
+              <li><a href="#0">Insight</a></li>
+            </ul>
+            <ul>
+              <li>More</li>
+              <li><a href="#0"> Blogs</a></li>
+              <li><a href="#0">Contact Us</a></li>
+              <li><a href="#0">FAQ</a></li>
+              <li><a href="#0">Privacy Policy</a></li>
+              <li><a href="#0">Terms & Condition</a></li>
+            </ul>
           </div>
-
-          <div class="wrapper">
-            <i id="left"><img src="../img/Frame.svg" alt="img" loading="lazy" /></i>
-            <ul class="carousel">
-              <li class="card">
-                <span>Nimbly speeds up our issue resolution in Kopi Kenangan.
-                  With Nimbly's issue tracker, the headquarters can receive
-                  real-time notifications from outlets and follow them up
-                  instantly. Nimbly not only reduces paper use, but also
-                  simplifies knowledge sharing, smoothens the information
-                  flow, and provides seamless access to data more.
-                </span>
-                <div class="div">
-                  <img src="../img/Nimbly-logos-09-150x150 1.svg" alt="img" loading="lazy" />
-                  <div class="miniBox">
-                    <h3>Tondi Sihombing</h3>
-                    <p>Operations Manager, Kopi Kenangan</p>
-                  </div>
-                </div>
+          <div class="footer-right">
+            <ul>
+              <li>Indonesian Office</li>
+              <li>
+                <a href="#0"
+                  >WeWork, Noble House <br />
+                  Jl. Dr. Ide Anak Agung <br />
+                  Gde Agung DKI Jakarta <br />
+                  12950</a
+                >
               </li>
-              <li class="card">
-                <span>Nimbly speeds up our issue resolution in Kopi Kenangan.
-                  With Nimbly's issue tracker, the headquarters can receive
-                  real-time notifications from outlets and follow them up
-                  instantly. Nimbly not only reduces paper use, but also
-                  simplifies knowledge sharing, smoothens the information
-                  flow, and provides seamless access to data more.
-                </span>
-                <div class="div">
-                  <img src="../img/Nimbly-logos-09-150x150 1.svg" alt="img" loading="lazy" />
-                  <div class="miniBox">
-                    <h3>Tondi Sihombing</h3>
-                    <p>Operations Manager, Kopi Kenangan</p>
-                  </div>
-                </div>
-              </li>
-              <li class="card">
-                <span>Nimbly speeds up our issue resolution in Kopi Kenangan.
-                  With Nimbly's issue tracker, the headquarters can receive
-                  real-time notifications from outlets and follow them up
-                  instantly. Nimbly not only reduces paper use, but also
-                  simplifies knowledge sharing, smoothens the information
-                  flow, and provides seamless access to data more.</span>
-
-                <div class="div">
-                  <img src="../img/Nimbly-logos-09-150x150 1.svg" alt="img" loading="lazy" />
-                  <div class="miniBox">
-                    <h3>Tondi Sihombing</h3>
-                    <p>Operations Manager, Kopi Kenangan</p>
-                  </div>
-                </div>
-              </li>
-              <li class="card">
-                <span>Nimbly speeds up our issue resolution in Kopi Kenangan.
-                  With Nimbly's issue tracker, the headquarters can receive
-                  real-time notifications from outlets and follow them up
-                  instantly. Nimbly not only reduces paper use, but also
-                  simplifies knowledge sharing, smoothens the information
-                  flow, and provides seamless access to data more.</span>
-                <div class="div">
-                  <img src="../img/Nimbly-logos-09-150x150 1.svg" alt="img" loading="lazy" />
-                  <div class="miniBox">
-                    <h3>Tondi Sihombing</h3>
-                    <p>Operations Manager, Kopi Kenangan</p>
-                  </div>
-                </div>
-              </li>
-              <li class="card">
-                <span>Nimbly speeds up our issue resolution in Kopi Kenangan.
-                  With Nimbly's issue tracker, the headquarters can receive
-                  real-time notifications from outlets and follow them up
-                  instantly. Nimbly not only reduces paper use, but also
-                  simplifies knowledge sharing, smoothens the information
-                  flow, and provides seamless access to data more.</span>
-                <div class="div">
-                  <img src="../img/Nimbly-logos-09-150x150 1.svg" alt="img" loading="lazy" />
-                  <div class="miniBox">
-                    <h3>Tondi Sihombing</h3>
-                    <p>Operations Manager, Kopi Kenangan</p>
-                  </div>
-                </div>
+              <li id="foot">US Office</li>
+              <li>
+                <a href="#0"
+                  >2001 Ross Avenue <br />
+                  Suite #700-119 Dallas, TX 75291</a
+                >
               </li>
             </ul>
-            <br />
-            <i id="right"><img src="../img/Frame (1).svg" alt="img" loading="lazy" /></i>
+            <ul>
+              <li>Singapore Office</li>
+              <li>
+                <a href="#0"
+                  >100 Peck Seah Street <br />
+                  PS100 #08-14 <br />
+                  Singapore 079333 <br
+                /></a>
+              </li>
+              <li id="foot">Colombia Office</li>
+              <li>
+                <a href="#0"
+                  >Calle 52 B # 74 A 32 <br />
+                  Bogotá - Colombia</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+        <div class="footer-botton">
+          <div class="con">
+            <p class="footer-botton-text">
+              <a href="#0">Copyright © 2021 Nimbly App. All rights reserved.</a>
+            </p>
+            <p class="footer-botton-text">
+              <a href="#0"
+                >We are ISO 27001 certified, assuring information security is
+                managed with the highest standards.</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer finished -->
     </section>
-    <!-- customer finished -->
 
-    <!-- emprower started -->
-    <section class="emprower-wrap">
-      <div class="container">
-        <h2 class="emp-big-text">
-          Empower your team today. Get started with intelligent workflows
-        </h2>
-        <p class="emp-small-text">
-          Nimbly brings you new opportunities through seamless digitization
-        </p>
-        <form>
-          <label for="1">Full Name :</label>
-          <input type="text" id="1" placeholder="Enter your full name" />
-          <label for="2">Email Address :</label>
-          <input type="email" id="2" placeholder="Enter your email address" />
-          <label for="3">Mobile :</label>
-          <input type="tel" id="3" placeholder="Enter your mobile" />
-          <label for="4">Company Name :</label>
-          <input type="text" id="4" placeholder="Enter your company name" />
-          <label for="5">Tittle :</label>
-          <input type="text" id="4" placeholder="Enter your tittle" />
-          <label for="6">Industry :</label>
-          <select name="emp" id="emp">
-            <option value="">Select Industry</option>
-            <option value="">Select Industry</option>
-            <option value="">Select Industry</option>
-            <option value="">Select Industry</option>
-          </select>
-          <button class="emp-btn">Request Demo</button>
-        </form>
-      </div>
-    </section>
-    <!-- emprower finished -->
+    <script src="./main.js"></script>
+    <script src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
+    <!-- features qism js -->
+    <script>
+      let acc = document.getElementsByClassName("accordion");
+      let i;
 
-    <!-- footer started -->
-    <footer>
-      <div class="container">
-        <div class="footer-left">
-          <div class="logo-footer">
-            <img src="../img/footer-logo.svg" alt="logo" loading="lazy" />
-          </div>
-          <p class="footer-text">
-            Digitize your business operations and <br />
-            gain real-time analytics on your team progress <br />
-            anytime, anywhere.
-          </p>
-          <div class="footer-img">
-            <img src="../img/footer-img.svg" alt="img" loading="lazy" />
-          </div>
-        </div>
-        <div class="footer-center">
-          <ul>
-            <li>Nimbly</li>
-            <li><a href="#0">About Us</a></li>
-            <li><a href="#0">Features</a></li>
-            <li><a href="#0">Industries</a></li>
-            <li><a href="#0">How it Works</a></li>
-            <li><a href="#0">Insight</a></li>
-          </ul>
-          <ul>
-            <li>More</li>
-            <li><a href="#0"> Blogs</a></li>
-            <li><a href="#0">Contact Us</a></li>
-            <li><a href="#0">FAQ</a></li>
-            <li><a href="#0">Privacy Policy</a></li>
-            <li><a href="#0">Terms & Condition</a></li>
-          </ul>
-        </div>
-        <div class="footer-right">
-          <ul>
-            <li>Indonesian Office</li>
-            <li>
-              <a href="#0">WeWork, Noble House <br />
-                Jl. Dr. Ide Anak Agung <br />
-                Gde Agung DKI Jakarta <br />
-                12950</a>
-            </li>
-            <li id="foot">US Office</li>
-            <li>
-              <a href="#0">2001 Ross Avenue <br />
-                Suite #700-119 Dallas, TX 75291</a>
-            </li>
-          </ul>
-          <ul>
-            <li>Singapore Office</li>
-            <li>
-              <a href="#0">100 Peck Seah Street <br />
-                PS100 #08-14 <br />
-                Singapore 079333 <br /></a>
-            </li>
-            <li id="foot">Colombia Office</li>
-            <li>
-              <a href="#0">Calle 52 B # 74 A 32 <br />
-                Bogotá - Colombia</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-botton">
-        <div class="con">
-          <p class="footer-botton-text">
-            <a href="#0">Copyright © 2021 Nimbly App. All rights reserved.</a>
-          </p>
-          <p class="footer-botton-text">
-            <a href="#0">We are ISO 27001 certified, assuring information security is
-              managed with the highest standards.</a>
-          </p>
-        </div>
-      </div>
-    </footer>
-    <!-- footer finished -->
-  </section>
-
-  <script src="./main.js"></script>
-  <script src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
-  <!-- features qism js -->
-  <script>
-    let acc = document.getElementsByClassName("accordion");
-    let i;
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
-    }
-  </script>
-  <!-- features qism js -->
-</body>
-
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <!-- features qism js -->
+  </body>
 </html>

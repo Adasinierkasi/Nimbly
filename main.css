@@ -54,6 +54,10 @@ html {
 
 .home-wrap .navbar {
   background-color: var(--white);
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 3;
 }
 
 .home-wrap .navbar-logo {
@@ -120,7 +124,9 @@ html {
   height: 69px;
   display: none;
 }
-
+.home-wrap .header{
+  padding-top: 80px;
+}
 .home-wrap .header-left-content {
   margin-right: 48px;
   width: 50%;
@@ -411,7 +417,7 @@ html {
   margin: 0 auto;
 }
 
-.fastwork-text>p {
+.fastwork-text > p {
   line-height: 32px;
   font-size: 18px;
   font-weight: 400;
@@ -429,7 +435,7 @@ html {
 }
 
 hr {
-  border: 1px solid #DEDEDE;
+  border: 1px solid #dedede;
   height: 70px;
 }
 
@@ -463,13 +469,13 @@ hr {
   margin-top: 100px;
 }
 
-.fastwork-about-text>h4 {
+.fastwork-about-text > h4 {
   text-transform: uppercase;
-  color: #0D7D38;
+  color: #0d7d38;
   margin-bottom: 4px;
 }
 
-.fastwork-about-text>h1 {
+.fastwork-about-text > h1 {
   color: var(--grey);
   font-weight: 600;
   max-width: 480px;
@@ -478,7 +484,7 @@ hr {
   margin-bottom: 16px;
 }
 
-.fastwork-about-text>.text1 {
+.fastwork-about-text > .text1 {
   max-width: 402px;
   color: var(--grey);
   font-size: 18px;
@@ -492,7 +498,7 @@ hr {
 }
 
 .border-button {
-  border: 1px solid #DEDEDE;
+  border: 1px solid #dedede;
   max-width: 500px;
 }
 
@@ -556,7 +562,7 @@ hr {
   background: #fff;
 }
 
-.fast-about-image>img {
+.fast-about-image > img {
   max-width: 490px;
 }
 
@@ -618,11 +624,11 @@ hr {
   color: #20b659;
 }
 
-.nummber>h4>i {
+.nummber > h4 > i {
   color: #20b659;
 }
 
-.nummber>p {
+.nummber > p {
   font-size: 13px;
   color: var(--grey);
 }
@@ -1118,7 +1124,7 @@ li {
 /* <!-- emprower  started -->*/
 .emprower-wrap .container {
   max-width: 1220px;
-  padding: 100px 150px;
+  padding: 100px 20px;
   margin: 0 auto;
 }
 
@@ -1145,8 +1151,6 @@ li {
 
 .emprower-wrap .container form {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .emprower-wrap .container form label {
@@ -1173,8 +1177,9 @@ li {
   opacity: 0.3;
   background-color: var(--inputcolor);
   border-radius: 8px;
-  border: none;
   display: block;
+  width: 100%;
+  border: 1px solid var(--grey);
 }
 
 .emprower-wrap .container form label {
@@ -1193,6 +1198,9 @@ li {
   border-radius: 8px;
   border: none;
   outline: none;
+  width: 100%;
+  border: 1px solid var(--grey);
+
 }
 
 .emprower-wrap .container form .emp-btn {
@@ -1207,6 +1215,7 @@ li {
   border: none;
   margin-top: 24px;
   border-radius: 8px;
+  width: 100%;
 }
 
 /* <!-- emprower finished --> */
@@ -1224,9 +1233,10 @@ footer .container {
   padding-bottom: 48px;
   max-width: 1140px;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
-
+footer .container .footer-left{
+  margin: 0 auto;
+}
 footer .container .footer-left .footer-text {
   font-family: "Poppins";
   font-style: normal;
@@ -1236,20 +1246,19 @@ footer .container .footer-left .footer-text {
   color: var(--white);
   margin-top: 24px;
   margin-bottom: 56px;
+  
 }
 
 .footer-center {
   display: flex;
   width: 692px;
   justify-content: space-between;
-  /* border: 1px solid wheat; */
 }
 
 .footer-right {
   display: flex;
   width: 892px;
   justify-content: space-between;
-  /* border: 1px solid wheat; */
 }
 
 .footer-text {
@@ -1304,7 +1313,7 @@ footer .container .footer-right ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: var(--text-co);
+  color: var(--white);
 }
 
 /* <!-- footer finished --> */
@@ -1314,12 +1323,13 @@ footer .container .footer-right ul {
 /* Small screens and laptops (@media) started*/
 
 @media screen and (min-width: 769px) and (max-width: 1025px) {
-
   /* header started */
   .home-wrap .navbar-logo {
     margin-right: 36px;
   }
-
+  .home-wrap .header{
+    padding-top: 80px;
+  }
   .home-wrap .navbar-left ul {
     gap: 20px;
   }
@@ -1595,6 +1605,7 @@ footer .container .footer-right ul {
     border-radius: 8px;
     border: none;
     display: block;
+    border: 1px solid var(--grey);
   }
 
   .emprower-wrap .container form select {
@@ -1609,6 +1620,8 @@ footer .container .footer-right ul {
     border-radius: 8px;
     border: none;
     outline: none;
+  border: 1px solid var(--grey);
+
   }
 
   .emprower-wrap .container form .emp-btn {
@@ -1726,7 +1739,7 @@ footer .container .footer-right ul {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    color: var(--text-co);
+    color: var(--white);
   }
 
   /* footer finished */
@@ -1737,13 +1750,14 @@ footer .container .footer-right ul {
 /* Ipads and tablets (@media) started*/
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-
   /* home started*/
   .home-wrap .header-wrap {
     background: url(../img/header-background.png);
     background-position: auto;
   }
-
+  .home-wrap .header{
+    padding-top: 0px;
+  }
   .home-wrap .navbar {
     display: none;
   }
@@ -1919,7 +1933,7 @@ footer .container .footer-right ul {
   /* features finished */
 
   /* Fast work started */
-  .fast-about-image>img {
+  .fast-about-image > img {
     max-width: 570px;
   }
 
@@ -1947,13 +1961,12 @@ footer .container .footer-right ul {
     gap: 100px;
   }
 
-  .fast-about-image>img {
+  .fast-about-image > img {
     max-width: 450px;
   }
 
   .fastwork-one p {
     font-size: 14px;
-
   }
 
   .fastwork-one span {
@@ -2035,7 +2048,7 @@ footer .container .footer-right ul {
 
   .customer-texts h2 {
     width: 481px;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 50px;
   }
 
@@ -2147,6 +2160,7 @@ footer .container .footer-right ul {
     background-color: var(--inputcolor);
     border-radius: 8px;
     border: none;
+    border: 1px solid var(--grey);
     display: block;
   }
 
@@ -2162,6 +2176,8 @@ footer .container .footer-right ul {
     border-radius: 8px;
     border: none;
     outline: none;
+  border: 1px solid var(--grey);
+
   }
 
   .emprower-wrap .container form .emp-btn {
@@ -2280,7 +2296,7 @@ footer .container .footer-right ul {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    color: var(--text-co);
+    color: var(--white);
     text-align: center;
   }
 
@@ -2292,7 +2308,6 @@ footer .container .footer-right ul {
 /* Mobile devices (@media) started */
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-
   /* home started */
   .container {
     padding: 0 15px;
@@ -2301,7 +2316,9 @@ footer .container .footer-right ul {
   .home-wrap .navbar {
     display: none;
   }
-
+  .home-wrap .header{
+    padding-top: 0px;
+  }
   .home-wrap .header .navbar-mobile {
     display: flex;
     margin-bottom: 58px;
@@ -2490,7 +2507,7 @@ footer .container .footer-right ul {
   /* features finished */
 
   /* FAst work started */
-  .fast-about-image>img {
+  .fast-about-image > img {
     max-width: 570px;
   }
 
@@ -2507,7 +2524,7 @@ footer .container .footer-right ul {
     padding: 0 15px;
   }
 
-  .fast-about-image>img {
+  .fast-about-image > img {
     max-width: 570px;
   }
 
@@ -2542,13 +2559,12 @@ footer .container .footer-right ul {
     max-width: 400px;
   }
 
-  .fast-about-image>img {
+  .fast-about-image > img {
     width: 100%;
   }
 
   .fastwork-one p {
     font-size: 14px;
-
   }
 
   .fastwork-one span {
@@ -2562,10 +2578,6 @@ footer .container .footer-right ul {
     padding-top: 37px;
     margin: 0 auto;
   }
-
-  /* .fast-about-image{
-            position: relative;
-        }  */
   .circular-wrapper {
     bottom: -20px;
     left: 50%;
@@ -2619,8 +2631,6 @@ footer .container .footer-right ul {
     font-weight: 600;
     color: var(--grey);
   }
-
-  /* Fast work finished */
 
   /* Fast work finished */
 
@@ -2786,6 +2796,7 @@ footer .container .footer-right ul {
     background-color: var(--inputcolor);
     border-radius: 8px;
     border: none;
+    border: 1px solid var(--grey);
     display: block;
   }
 
@@ -2800,14 +2811,16 @@ footer .container .footer-right ul {
     display: block;
     border-radius: 8px;
     border: none;
-    outline: none;
+  border: 1px solid var(--grey);
+  outline: none;
+  
   }
 
   .emprower-wrap .container form .emp-btn {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 27px;
     background-color: var(--green);
     color: var(--white);
@@ -2854,15 +2867,15 @@ footer .container .footer-right ul {
     display: flex;
     width: 280px;
     justify-content: space-between;
-    /* border: 1px solid wheat; */
+    flex-wrap: wrap;
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
   }
 
   .footer-right {
     display: flex;
     width: 280px;
+    gap: 30px;
     justify-content: space-between;
     /* border: 1px solid wheat; */
     margin-top: 30px;
@@ -2919,7 +2932,7 @@ footer .container .footer-right ul {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    color: var(--text-co);
+    color: var(--white);
     text-align: center;
   }
 
