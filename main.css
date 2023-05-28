@@ -423,7 +423,7 @@ html {
 .fastwork-in {
   margin-top: 37px;
   display: flex;
-  margin-left: 100px;
+  justify-content: center;
   gap: 100px;
   align-items: center;
 }
@@ -557,7 +557,7 @@ hr {
 }
 
 .fast-about-image>img {
-  max-width: 570px;
+  max-width: 490px;
 }
 
 .circular-wrapper p {
@@ -1443,22 +1443,14 @@ footer .container .footer-right ul {
 
   /* Fast work started */
   .fastwork-in {
-    padding-left: 60px;
+    padding: 0 20px;
     margin-top: 37px;
     display: flex;
     gap: 50px;
   }
 
-  .fastwork-about-text h1 {
-    font-size: 40px;
-  }
-
-  .fast-about-image>img {
-    max-width: 570px;
-  }
-
-  .fastwork-one p {
-    min-width: 215px;
+  .fast-about-image img {
+    max-width: 450px;
   }
 
   .fastwork-in {
@@ -1469,10 +1461,15 @@ footer .container .footer-right ul {
   /* .fast-about-image{
           position: relative;
       }  */
+
   .circular-wrapper {
     position: absolute;
     bottom: 10px;
     left: 10px;
+  }
+
+  .fastwork-about {
+    flex-direction: column;
   }
 
   /* Fast work finished */
@@ -1929,11 +1926,11 @@ footer .container .footer-right ul {
   .fastwork-in {
     margin-top: 37px;
     display: flex;
-    gap: 50px;
+    gap: 30px;
   }
 
   .fastwork-text p {
-    margin-left: 80px;
+    /* margin-left: 80px; */
     text-align: center;
   }
 
@@ -1942,16 +1939,28 @@ footer .container .footer-right ul {
   }
 
   .fastwork-about {
+    flex-direction: column;
+  }
+
+  .fastwork-about {
     display: flex;
     gap: 100px;
   }
 
   .fast-about-image>img {
-    max-width: 500px;
+    max-width: 450px;
   }
 
   .fastwork-one p {
-    min-width: 215px;
+    font-size: 14px;
+
+  }
+
+  .fastwork-one span {
+    font-size: 28px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .fastwork-in {
@@ -2485,9 +2494,133 @@ footer .container .footer-right ul {
     max-width: 570px;
   }
 
+  .fastwork-in {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  hr {
+    display: none;
+  }
+
   .container {
     padding: 0 15px;
   }
+
+  .fast-about-image>img {
+    max-width: 570px;
+  }
+
+  .fastwork-in {
+    margin-top: 37px;
+    display: flex;
+    gap: 30px;
+  }
+
+  .fastwork-text p {
+    /* margin-left: 80px; */
+    text-align: center;
+  }
+
+  .fastwork-about-text h1 {
+    font-size: 32px;
+    /* font-weight: 8px; */
+  }
+
+  .fastwork-about {
+    flex-direction: column;
+  }
+
+  .fastwork-about {
+    display: flex;
+    gap: 100px;
+  }
+
+  .fast-about-image {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+  }
+
+  .fast-about-image>img {
+    width: 100%;
+  }
+
+  .fastwork-one p {
+    font-size: 14px;
+
+  }
+
+  .fastwork-one span {
+    font-size: 28px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .fastwork-in {
+    padding-top: 37px;
+    margin: 0 auto;
+  }
+
+  /* .fast-about-image{
+            position: relative;
+        }  */
+  .circular-wrapper {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 320px;
+    padding: 20px 15px;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .circular-wrapper p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 0px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .circular-wrapper i {
+    margin-left: 10px;
+    color: rgb(38, 16, 204);
+  }
+
+  .wrapper_about {
+    display: flex;
+  }
+
+  .circular-progress {
+    position: relative;
+    height: 110px;
+    width: 110px;
+    background: conic-gradient(#0ad959 3.6deg, #ededed 0deg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  .progress-value {
+    position: relative;
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--grey);
+  }
+
+  /* Fast work finished */
 
   /* Fast work finished */
 
