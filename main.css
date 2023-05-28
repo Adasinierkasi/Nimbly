@@ -28,7 +28,6 @@ html {
   max-width: 1220px;
   padding: 0 25px;
   margin: 0 auto;
-  border: 1px solid green;
 }
 
 .unsupported-device {
@@ -210,7 +209,7 @@ html {
 
 /* <!--management   started --> */
 .management-wrap .container {
-  margin: 0px auto;
+  margin: 37px auto;
 }
 
 .management-wrap marquee {
@@ -270,6 +269,118 @@ html {
 /* <!-- management  finished --> */
 
 /* <!-- features started --> */
+.features-wrap {
+  background-image: url(../img/featries-bg-color.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.features-wrap-title p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #0d7d38;
+}
+.features-wrap-title h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: #333333;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.tab {
+  max-width: 1035px;
+  height: 66px;
+  background: #dcf3e5;
+  /* opacity: 0.1; */
+  border-radius: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 32px auto;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 5px;
+  transition: 0.3s;
+  border-radius: 75px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background: #ffffff;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+}
+.tab button:active {
+  background: rgba(0, 0, 0, 0.141);
+}
+.tab button img {
+  max-width: 32px;
+  color: var(--black);
+}
+.tab button:hover img {
+  color: #13ab4e;
+}
+.tab button p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+.tab button:hover p {
+  color: #13ab4e;
+}
+.tablinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  text-align: center;
+}
+.tabcontent p {
+  width: 74%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 24px;
+  margin: 30px auto;
+  text-align: center;
+  color: #333333;
+}
+.tabcontent p a {
+  color: #13ab4e;
+}
+.tabcontent img {
+  margin: 0 auto;
+  max-width: 837px;
+}
+.featuries-accordion {
+  display: none;
+}
+
 /* <!-- features finished --> */
 
 /* <!-- fastwork started --> */
@@ -371,6 +482,37 @@ html {
     font-size: 15px;
   }
   /* management finished */
+
+  /* features started */
+  .features-wrap-title p {
+    font-size: 18px;
+  }
+  .features-wrap-title h1 {
+    font-size: 40px;
+    line-height: 68px;
+    width: 75%;
+  }
+  .tab {
+    max-width: 910px;
+    height: 55px;
+  }
+  .tab button {
+    padding: 7px 3px;
+    border-radius: 70px;
+  }
+  .tab button img {
+    max-width: 28px;
+  }
+  .tab button p {
+    font-size: 11px;
+  }
+  .tabcontent p {
+    font-size: 16px;
+  }
+  .tabcontent img {
+    max-width: 500px;
+  }
+  /* features finished */
 }
 
 /* Small screens and laptops (@media) finished*/
@@ -450,7 +592,9 @@ html {
 
   /* management started */
   .management-wrap .container {
-    margin: 60px auto;
+    margin: 0px auto;
+    padding-top: 600px;
+    padding-bottom: 40px;
   }
   .management-wrap marquee a img {
     width: 130px;
@@ -476,6 +620,65 @@ html {
     margin: 38px;
   }
   /* management finished */
+
+  /* features started */
+  .featuries-tap-bar {
+    display: none;
+  }
+  .featuries-accordion {
+    display: block;
+  }
+  .features-wrap-title p {
+    font-size: 18px;
+  }
+  .features-wrap-title h1 {
+    font-size: 36px;
+    line-height: 52px;
+  }
+  .accordion {
+    background-color: #f3fbf6;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1.5px solid #dedede;
+    position: relative;
+  }
+  .accordion i {
+    position: absolute;
+    right: 10px;
+  }
+  .active,
+  .accordion:hover {
+    color: var(--green);
+  }
+  .accordion:hover i {
+    transform: rotate(180deg);
+  }
+  .panel {
+    padding: 20px 18px;
+    display: none;
+    background-color: #f3fbf6;
+    overflow: hidden;
+  }
+  .panel p {
+    font-size: 17px;
+  }
+  .panel p a {
+    color: var(--green);
+  }
+  .panel img {
+    max-width: 90%;
+    margin-top: 40px;
+  }
+  /* features finished */
 }
 
 /* Ipads and tablets (@media) finished*/
@@ -567,7 +770,9 @@ html {
 
   /* management started */
   .management-wrap .container {
-    margin: 300px auto;
+    margin: 0px auto;
+    padding-top: 300px;
+    padding-bottom: 40px;
   }
   .management-wrap marquee a img {
     width: 100px;
@@ -593,6 +798,68 @@ html {
     margin: 30px;
   }
   /* management finished */
+
+  /* features started */
+  .featuries-tap-bar {
+    display: none;
+  }
+  .featuries-accordion {
+    display: block;
+  }
+  .features-wrap-title p {
+    font-size: 15px;
+  }
+  .features-wrap-title h1 {
+    font-size: 24px;
+    line-height: 46px;
+  }
+  .accordion {
+    background-color: #f3fbf6;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1.5px solid #dedede;
+    position: relative;
+  }
+  .accordion img {
+    width: 30px;
+  }
+  .accordion i {
+    position: absolute;
+    right: 10px;
+  }
+  .active,
+  .accordion:hover {
+    color: var(--green);
+  }
+  .accordion:hover i {
+    transform: rotate(180deg);
+  }
+  .panel {
+    padding: 18px 16px;
+    display: none;
+    background-color: #f3fbf6;
+    overflow: hidden;
+  }
+  .panel p {
+    font-size: 15px;
+  }
+  .panel p a {
+    color: var(--green);
+  }
+  .panel img {
+    max-width: 90%;
+    margin-top: 30px;
+  }
+  /* features finished */
 }
 
 /* Mobile devices (@media) finished */
